@@ -1,0 +1,22 @@
+.form-check:has(#ActivateEmailBranding) ~ .subdomain-list {
+    display: none;
+}
+.form-check:has(#ActivateEmailBranding:checked) ~ .subdomain-list {
+    display: block;
+}
+.icon-acc-bg {
+    background-color: #F2F9FC;
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    border-radius: var(--radius-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+@media screen and (max-width: 575px) {
+.ms-0px {
+    margin-left: 0px;
+}
+}

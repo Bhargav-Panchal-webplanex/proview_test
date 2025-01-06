@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proview App</title>
+<link rel="icon" type="image/svg" href="images/Uploaded-Favicon.svg">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/widget.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body class="bg-F5F7F7"> 
+  <!-- breadcrumb start -->
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb" class="breadcrumb-bg py-2 row justify-content-between align-items-center fs-14 gy-3 gy-sm-0">
+        <div class="col-sm-auto">
+            <ol class="breadcrumb mb-0 ps-sm-2">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="22" width="22" fill="#616161"><path fill-rule="evenodd" d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.847.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.19Z"/></svg> Home</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="widget.html" class="text-decoration-none">Widget</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Configuration</li>
+            </ol>
+        </div>
+        <div class="col-sm-auto order-sm-last order-first">
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="border-end border-secondary me-2 pe-2">
+                    <div class="dropdown">
+                        <button class="border-0 text-616 dropdown-toggle fs-14" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ENG
+                        </button>
+                        <ul class="dropdown-menu fs-14">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another</a></li>
+                          <li><a class="dropdown-item" href="#">Something</a></li>
+                        </ul>
+                      </div> 
+                </li>
+                <li class="px-1">
+                    <a href="#" class="text-decoration-none">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0942 16.1337C15.0698 16.0589 15.025 15.9923 14.9648 15.9416C14.9046 15.8908 14.8314 15.858 14.7535 15.8466L13.1113 15.608L12.3769 14.1199C12.3421 14.0493 12.2882 13.9899 12.2213 13.9483C12.1545 13.9068 12.0773 13.8848 11.9986 13.8848C11.9199 13.8848 11.8427 13.9068 11.7759 13.9483C11.709 13.9899 11.6551 14.0493 11.6203 14.1199L10.8859 15.608L9.24368 15.8466C9.16578 15.858 9.0926 15.8908 9.03241 15.9416C8.97222 15.9923 8.92743 16.0589 8.90309 16.1337C8.87877 16.2086 8.87588 16.2888 8.89475 16.3652C8.91361 16.4416 8.95348 16.5113 9.00984 16.5662L10.1982 17.7245L9.91764 19.3601C9.90431 19.4377 9.91297 19.5175 9.94262 19.5904C9.97227 19.6633 10.0217 19.7265 10.0854 19.7728C10.1491 19.8191 10.2245 19.8466 10.303 19.8523C10.3815 19.8579 10.4601 19.8415 10.5298 19.8049L11.9986 19.0326L13.4675 19.8049C13.5372 19.8415 13.6157 19.8579 13.6942 19.8523C13.7727 19.8466 13.8481 19.819 13.9118 19.7728C13.9755 19.7265 14.0249 19.6633 14.0546 19.5904C14.0843 19.5175 14.0929 19.4377 14.0796 19.3601L13.7991 17.7245L14.9874 16.5662C15.0438 16.5113 15.0837 16.4417 15.1025 16.3652C15.1214 16.2888 15.1185 16.2086 15.0942 16.1337ZM8.27156 16.1338C8.2472 16.059 8.20239 15.9924 8.14219 15.9416C8.08199 15.8909 8.0088 15.858 7.93089 15.8467L6.28867 15.608L5.55428 14.12C5.51944 14.0494 5.46554 13.9899 5.39868 13.9484C5.33183 13.9068 5.25468 13.8848 5.17596 13.8848C5.09724 13.8848 5.0201 13.9068 4.95324 13.9484C4.88639 13.9899 4.83249 14.0494 4.79764 14.12L4.06326 15.608L2.42104 15.8467C2.34314 15.858 2.26996 15.8909 2.20977 15.9416C2.14958 15.9924 2.10479 16.0589 2.08044 16.1338C2.05613 16.2087 2.05324 16.2888 2.07211 16.3653C2.09097 16.4417 2.13084 16.5113 2.1872 16.5663L3.37552 17.7246L3.09503 19.3602C3.08172 19.4378 3.09039 19.5176 3.12005 19.5905C3.14971 19.6634 3.19918 19.7266 3.26286 19.7728C3.32655 19.8191 3.40191 19.8466 3.48042 19.8523C3.55894 19.858 3.63748 19.8416 3.70715 19.8049L5.176 19.0327L6.64489 19.8049C6.71456 19.8416 6.7931 19.858 6.87162 19.8523C6.95014 19.8467 7.02551 19.8191 7.08919 19.7728C7.15287 19.7266 7.20234 19.6634 7.232 19.5905C7.26166 19.5176 7.27032 19.4378 7.25701 19.3602L6.97648 17.7246L8.16481 16.5663C8.22118 16.5114 8.26105 16.4417 8.27992 16.3653C8.29878 16.2889 8.29589 16.2087 8.27156 16.1338ZM21.9169 16.1337C21.8925 16.0589 21.8477 15.9923 21.7875 15.9416C21.7273 15.8909 21.6541 15.858 21.5762 15.8467L19.934 15.608L19.1996 14.12C19.1648 14.0494 19.1109 13.9899 19.044 13.9484C18.9772 13.9068 18.9 13.8848 18.8213 13.8848C18.7426 13.8848 18.6654 13.9068 18.5986 13.9484C18.5317 13.9899 18.4778 14.0494 18.443 14.12L17.7086 15.608L16.0664 15.8467C15.9885 15.858 15.9153 15.8909 15.8551 15.9416C15.7949 15.9924 15.7501 16.0589 15.7258 16.1338C15.7015 16.2087 15.6986 16.2888 15.7174 16.3653C15.7363 16.4417 15.7762 16.5113 15.8325 16.5663L17.0208 17.7246L16.7403 19.3602C16.727 19.4378 16.7356 19.5175 16.7653 19.5905C16.795 19.6634 16.8444 19.7266 16.9081 19.7728C16.9718 19.8191 17.0472 19.8466 17.1257 19.8523C17.2042 19.858 17.2828 19.8415 17.3524 19.8049L18.8213 19.0327L20.2902 19.8049C20.3599 19.8415 20.4384 19.8579 20.5169 19.8523C20.5954 19.8466 20.6708 19.8191 20.7345 19.7728C20.7982 19.7265 20.8476 19.6634 20.8773 19.5904C20.9069 19.5175 20.9156 19.4378 20.9023 19.3602L20.6218 17.7246L21.8101 16.5662C21.8665 16.5113 21.9064 16.4417 21.9252 16.3652C21.9441 16.2888 21.9412 16.2086 21.9169 16.1337ZM19.387 4.28577H4.61025C3.01267 4.28577 1.71289 5.5855 1.71289 7.18312V9.13817C1.71289 10.6298 2.84577 11.8618 4.29641 12.0186L4.92288 12.8532C5.12939 13.1284 5.44508 13.2893 5.78901 13.2946L5.80673 13.2947C6.14394 13.2947 6.45718 13.1444 6.66844 12.8805L7.34508 12.0355H19.387C20.9846 12.0355 22.2843 10.7358 22.2843 9.13813V7.18308C22.2843 5.5855 20.9845 4.28577 19.387 4.28577ZM10.7061 9.95042H5.22032C4.88748 9.95042 4.61764 9.68058 4.61764 9.34774C4.61764 9.0149 4.88748 8.74507 5.22032 8.74507H10.7061C11.039 8.74507 11.3088 9.0149 11.3088 9.34774C11.3088 9.68058 11.039 9.95042 10.7061 9.95042ZM18.7769 7.52717H5.22032C4.88748 7.52717 4.61764 7.25733 4.61764 6.92449C4.61764 6.59166 4.88748 6.32182 5.22032 6.32182H18.7769C19.1097 6.32182 19.3796 6.59166 19.3796 6.92449C19.3796 7.25733 19.1097 7.52717 18.7769 7.52717Z" fill="#616161"/>
+                            </svg>    
+                    </a>
+                </li>
+                <li class="px-1">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#navSearchModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#616161" fill-rule="evenodd" d="M12.323 13.383a5.5 5.5 0 1 1 1.06-1.06l2.897 2.897a.75.75 0 1 1-1.06 1.06l-2.897-2.897Zm.677-4.383a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>
+                        </a> 
+                        <div class="modal modal-theme-with-header fade px-2 nav-search-modal" id="navSearchModal" data-bs-backdrop="true"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body px-md-3 mx-1">
+                                        <div class="input-group h-54">
+                                            <span class="bg-white border-D8D8D8 h-40 input-group-text pe-0 py-2 rounded-bottom-0 rounded-start-3 nav-searchbar-icon" id="navSearchbarIcon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#616161" fill-rule="evenodd" d="M12.323 13.383a5.5 5.5 0 1 1 1.06-1.06l2.897 2.897a.75.75 0 1 1-1.06 1.06l-2.897-2.897Zm.677-4.383a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path></svg></span>
+                                            <input type="text" class="fs-14 border-D8D8D8 border-start-0 border-end-0 form-control h-40 ps-2 py-2 rounded-end-0 nav-searchbar" placeholder="Find settings (Keyboard shortcut : Ctrl+Shift+F)" aria-label="Username" aria-describedby="basic-addon1">
+                                            <button type="button" class="bg-white border-D8D8D8 h-40 input-group-text pe-0 py-2 rounded-start-0 border-start-0 nav-searchbar-icon rounded-end-3 pe-2" id="navSearchbarIcon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                                            </button>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Product Review</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Site Review</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Question & Answer</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Product Grouping</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > View Orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Import & Export</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting> Integration</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting > Theme Setting</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting > Custom CSS (Admin Only)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting > Feature Enable/Disable</a>
+                                            </li> 
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <li class="px-1">
+                    <a href="notifications.html" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#616161" fill-rule="evenodd" d="m7.252 14.424-2.446-.281c-1.855-.213-2.38-2.659-.778-3.616l.065-.038a2.887 2.887 0 0 0 1.407-2.48v-.509a4.5 4.5 0 0 1 9 0v.51c0 1.016.535 1.958 1.408 2.479l.065.038c1.602.957 1.076 3.403-.778 3.616l-2.543.292v.365a2.7 2.7 0 0 1-5.4 0v-.376Zm3.9.076h-2.4v.3a1.2 1.2 0 0 0 2.4 0v-.3Zm-3.152-1.5h4l3.024-.348a.452.452 0 0 0 .18-.837l-.065-.038a4.414 4.414 0 0 1-.747-.562 4.387 4.387 0 0 1-1.392-3.205v-.51a3 3 0 0 0-6 0v.51a4.387 4.387 0 0 1-2.138 3.767l-.065.038a.452.452 0 0 0 .18.838l3.023.347Z"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- breadcrumb end -->
+  <!-- Import and export start -->
+  <div class="container widget">
+    <div class="row justify-content-between align-items-center pb-4 gy-3 gy-sm-0">
+      <div class="align-items-center col-md-8 col-auto d-flex">
+        <h1 class="align-items-center d-flex fw-semibold mb-0 fs-20">
+              <a href="widget.html" class="text-decoration-none text-303030 me-1">
+                  <svg width="34" class="me-1" height="34" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.636364" y="0.636364" width="26.7273" height="26.7273" rx="13.3636" stroke="#616161" stroke-width="1.27273"></rect>
+                      <path d="M18.375 14.6364C18.7265 14.6364 19.0114 14.3515 19.0114 14C19.0114 13.6485 18.7265 13.3636 18.375 13.3636L18.375 14.6364ZM9.17502 13.55C8.92651 13.7985 8.92651 14.2015 9.17502 14.45L13.2248 18.4998C13.4733 18.7483 13.8763 18.7483 14.1248 18.4998C14.3733 18.2513 14.3733 17.8483 14.1248 17.5998L10.525 14L14.1248 10.4002C14.3733 10.1517 14.3733 9.74874 14.1248 9.50023C13.8763 9.25171 13.4733 9.25171 13.2248 9.50023L9.17502 13.55ZM18.375 13.3636L9.625 13.3636L9.625 14.6364L18.375 14.6364L18.375 13.3636Z" fill="#616161"></path>
+                      </svg> 
+              </a> 
+              <span>Product Page Widget</span>
+          </h1>
+      </div>
+      <div class="align-items-center col-auto d-flex justify-content-center ms-auto">
+        <button class="btn btn-primary" type="button">
+          Save
+        </button>
+      </div>
+  </div>
+  <div class="d-flex d-md-none pb-3 justify-content-end">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ReviewCouponsMobileView">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path fill-rule="evenodd" d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/><path fill-rule="evenodd" d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z"/></svg> View Sample
+    </button>
+  </div>
+    <div class="gx-3 gy-3 gy-md-0 row">
+      <div class="col-md-8">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                General theme color
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse px-1 show" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                <div class="row align-items-center pb-3">
+                  <div class="col-sm-4">
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path fill-rule="evenodd" d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.847.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.19Z"/></svg>
+                      <div class="fs-16 text-303030 py-2 fw-medium">
+                        Theme Color
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="align-items-center card d-flex flex-row p-1 pe-2 rounded-pill w-138 py-5px">
+                      <div class="me-2">
+                        <input type="color" value="#005CEA" id="colorPicker" class="border-0 d-block h-30 m-0 outline-none p-0 rounded-pill shadow-none w-46">
+                      </div>
+                      <div class="picker-value fs-12">
+                        #005CEA
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center pb-3">
+                  <div class="col-sm-4">
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                      <div class="fs-16 text-303030 py-2 fw-medium">
+                        Review Icon
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col-auto align-items-center d-flex">
+                    <div class="card dropdown py-5px rounded-pill me-10">
+                      <button class="bg-transparent review-icon border-0 btn btn-secondary dropdown-toggle p-0 h-30" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"></path></svg>
+                      </button>
+                      <ul class="dropdown-menu flex-wrap px-1 review-icon-dropdown">
+                        <li><a class="dropdown-item" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg></a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg></a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M10.749 11.957c2.545-.294 4.501-2.066 4.501-4.207 0-2.347-2.35-4.25-5.25-4.25s-5.25 1.903-5.25 4.25c0 2.141 1.956 3.913 4.501 4.207a.763.763 0 0 0-.001.043v4.25a.75.75 0 0 0 1.5 0v-4.25l-.001-.043Z"/><path d="M5 11.5c-.446 0-.872.083-1.265.235a3.5 3.5 0 0 0 4.53 4.53 3.5 3.5 0 0 0-3.265-4.765Z"/><path d="M15 11.5c.446 0 .872.083 1.265.235a3.5 3.5 0 0 1-4.53 4.53 3.5 3.5 0 0 1 3.265-4.765Z"/></svg></a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v4.25a6.75 6.75 0 0 0 6.75 6.75v1.25a.75.75 0 0 0 1.5 0v-1.293a6.501 6.501 0 0 0 5.75-6.457v-1.52a.98.98 0 0 0-.98-.98c-1.99 0-3.762.926-4.91 2.371a6.752 6.752 0 0 0-6.61-5.371h-.5Zm8.035 10.26a5.002 5.002 0 0 0 3.465-4.76v-.972a4.772 4.772 0 0 0-4.227 4.275l1.387-1.766a.75.75 0 1 1 1.18.926l-1.805 2.297Zm-5.905-4.338 3.104 4.553a5.25 5.25 0 0 1-4.734-5.225v-3.75c2.9 0 5.25 2.35 5.25 5.25v1.819l-2.38-3.492a.75.75 0 1 0-1.24.845Z"/></svg></a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M6.5 5.5v-.25a2.25 2.25 0 0 1 2.25-2.25h2.5a2.25 2.25 0 0 1 2.25 2.25v.25h.25a3.25 3.25 0 0 1 3.25 3.25v5a3.25 3.25 0 0 1-3.25 3.25h-7.5a3.25 3.25 0 0 1-3.25-3.25v-5a3.25 3.25 0 0 1 3.25-3.25h.25Zm1.5-.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v.25h-4v-.25Zm-2.84 4.292a.625.625 0 0 1 .798-.381l.256.09c2.45.865 5.122.865 7.572 0l.256-.09a.625.625 0 1 1 .416 1.178l-.256.09a12.625 12.625 0 0 1-3.212.682.91.91 0 0 1 .01.139v.75a1 1 0 1 1-2 0v-.75c0-.047.003-.094.01-.14a12.622 12.622 0 0 1-3.212-.68l-.256-.09a.625.625 0 0 1-.381-.798Z"/></svg></a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M8.469 5.785c-.966-1.047-2.505-1.047-3.47 0-.998 1.081-.998 2.857 0 3.939l5.001 5.42 5.002-5.42c.997-1.082.997-2.858 0-3.939-.966-1.047-2.505-1.047-3.47 0l-.98 1.062a.75.75 0 0 1-1.103 0l-.98-1.062Zm-4.573-1.017c1.56-1.69 4.115-1.69 5.675 0l.429.464.429-.464c1.56-1.69 4.115-1.69 5.675 0 1.528 1.656 1.528 4.317 0 5.973l-5.185 5.62a1.25 1.25 0 0 1-1.838 0l-5.185-5.62c-1.528-1.656-1.528-4.317 0-5.973Z"/></svg></a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg></a></li>
+                            <li><a class="dropdown-item" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg></a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M10.749 11.957c2.545-.294 4.501-2.066 4.501-4.207 0-2.347-2.35-4.25-5.25-4.25s-5.25 1.903-5.25 4.25c0 2.141 1.956 3.913 4.501 4.207a.763.763 0 0 0-.001.043v4.25a.75.75 0 0 0 1.5 0v-4.25l-.001-.043Z"/><path d="M5 11.5c-.446 0-.872.083-1.265.235a3.5 3.5 0 0 0 4.53 4.53 3.5 3.5 0 0 0-3.265-4.765Z"/><path d="M15 11.5c.446 0 .872.083 1.265.235a3.5 3.5 0 0 1-4.53 4.53 3.5 3.5 0 0 1 3.265-4.765Z"/></svg></a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v4.25a6.75 6.75 0 0 0 6.75 6.75v1.25a.75.75 0 0 0 1.5 0v-1.293a6.501 6.501 0 0 0 5.75-6.457v-1.52a.98.98 0 0 0-.98-.98c-1.99 0-3.762.926-4.91 2.371a6.752 6.752 0 0 0-6.61-5.371h-.5Zm8.035 10.26a5.002 5.002 0 0 0 3.465-4.76v-.972a4.772 4.772 0 0 0-4.227 4.275l1.387-1.766a.75.75 0 1 1 1.18.926l-1.805 2.297Zm-5.905-4.338 3.104 4.553a5.25 5.25 0 0 1-4.734-5.225v-3.75c2.9 0 5.25 2.35 5.25 5.25v1.819l-2.38-3.492a.75.75 0 1 0-1.24.845Z"/></svg></a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M6.5 5.5v-.25a2.25 2.25 0 0 1 2.25-2.25h2.5a2.25 2.25 0 0 1 2.25 2.25v.25h.25a3.25 3.25 0 0 1 3.25 3.25v5a3.25 3.25 0 0 1-3.25 3.25h-7.5a3.25 3.25 0 0 1-3.25-3.25v-5a3.25 3.25 0 0 1 3.25-3.25h.25Zm1.5-.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v.25h-4v-.25Zm-2.84 4.292a.625.625 0 0 1 .798-.381l.256.09c2.45.865 5.122.865 7.572 0l.256-.09a.625.625 0 1 1 .416 1.178l-.256.09a12.625 12.625 0 0 1-3.212.682.91.91 0 0 1 .01.139v.75a1 1 0 1 1-2 0v-.75c0-.047.003-.094.01-.14a12.622 12.622 0 0 1-3.212-.68l-.256-.09a.625.625 0 0 1-.381-.798Z"/></svg></a></li>
+                          <li><a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M8.469 5.785c-.966-1.047-2.505-1.047-3.47 0-.998 1.081-.998 2.857 0 3.939l5.001 5.42 5.002-5.42c.997-1.082.997-2.858 0-3.939-.966-1.047-2.505-1.047-3.47 0l-.98 1.062a.75.75 0 0 1-1.103 0l-.98-1.062Zm-4.573-1.017c1.56-1.69 4.115-1.69 5.675 0l.429.464.429-.464c1.56-1.69 4.115-1.69 5.675 0 1.528 1.656 1.528 4.317 0 5.973l-5.185 5.62a1.25 1.25 0 0 1-1.838 0l-5.185-5.62c-1.528-1.656-1.528-4.317 0-5.973Z"/></svg></a></li>
+                            <li><a class="dropdown-item" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg></a></li>
+                              <li><a class="dropdown-item" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg></a></li>
+                            <li><a class="dropdown-item" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M10.749 11.957c2.545-.294 4.501-2.066 4.501-4.207 0-2.347-2.35-4.25-5.25-4.25s-5.25 1.903-5.25 4.25c0 2.141 1.956 3.913 4.501 4.207a.763.763 0 0 0-.001.043v4.25a.75.75 0 0 0 1.5 0v-4.25l-.001-.043Z"/><path d="M5 11.5c-.446 0-.872.083-1.265.235a3.5 3.5 0 0 0 4.53 4.53 3.5 3.5 0 0 0-3.265-4.765Z"/><path d="M15 11.5c.446 0 .872.083 1.265.235a3.5 3.5 0 0 1-4.53 4.53 3.5 3.5 0 0 1 3.265-4.765Z"/></svg></a></li>
+                            <li><a class="dropdown-item" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v4.25a6.75 6.75 0 0 0 6.75 6.75v1.25a.75.75 0 0 0 1.5 0v-1.293a6.501 6.501 0 0 0 5.75-6.457v-1.52a.98.98 0 0 0-.98-.98c-1.99 0-3.762.926-4.91 2.371a6.752 6.752 0 0 0-6.61-5.371h-.5Zm8.035 10.26a5.002 5.002 0 0 0 3.465-4.76v-.972a4.772 4.772 0 0 0-4.227 4.275l1.387-1.766a.75.75 0 1 1 1.18.926l-1.805 2.297Zm-5.905-4.338 3.104 4.553a5.25 5.25 0 0 1-4.734-5.225v-3.75c2.9 0 5.25 2.35 5.25 5.25v1.819l-2.38-3.492a.75.75 0 1 0-1.24.845Z"/></svg></a></li>
+                            <li><a class="dropdown-item" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M6.5 5.5v-.25a2.25 2.25 0 0 1 2.25-2.25h2.5a2.25 2.25 0 0 1 2.25 2.25v.25h.25a3.25 3.25 0 0 1 3.25 3.25v5a3.25 3.25 0 0 1-3.25 3.25h-7.5a3.25 3.25 0 0 1-3.25-3.25v-5a3.25 3.25 0 0 1 3.25-3.25h.25Zm1.5-.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v.25h-4v-.25Zm-2.84 4.292a.625.625 0 0 1 .798-.381l.256.09c2.45.865 5.122.865 7.572 0l.256-.09a.625.625 0 1 1 .416 1.178l-.256.09a12.625 12.625 0 0 1-3.212.682.91.91 0 0 1 .01.139v.75a1 1 0 1 1-2 0v-.75c0-.047.003-.094.01-.14a12.622 12.622 0 0 1-3.212-.68l-.256-.09a.625.625 0 0 1-.381-.798Z"/></svg></a></li>
+                            <li><a class="dropdown-item" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M8.469 5.785c-.966-1.047-2.505-1.047-3.47 0-.998 1.081-.998 2.857 0 3.939l5.001 5.42 5.002-5.42c.997-1.082.997-2.858 0-3.939-.966-1.047-2.505-1.047-3.47 0l-.98 1.062a.75.75 0 0 1-1.103 0l-.98-1.062Zm-4.573-1.017c1.56-1.69 4.115-1.69 5.675 0l.429.464.429-.464c1.56-1.69 4.115-1.69 5.675 0 1.528 1.656 1.528 4.317 0 5.973l-5.185 5.62a1.25 1.25 0 0 1-1.838 0l-5.185-5.62c-1.528-1.656-1.528-4.317 0-5.973Z"/></svg></a></li>
+                      </ul>
+                    </div>
+                    <div class="align-items-center card d-flex flex-row p-1 pe-2 rounded-pill w-138 py-5px">
+                      <div class="me-2">
+                        <input type="color" value="#FFA630" id="colorPicker" class="border-0 d-block h-30 m-0 outline-none p-0 rounded-pill shadow-none w-46">
+                      </div>
+                      <div class="picker-value fs-12">
+                        #FFA630
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-4">
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path d="M4 4.75a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-.75h-3.5v8.75h1.25a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5h1.25v-8.75h-3.5v.75a.75.75 0 0 1-1.5 0v-1.5Z"/></svg>
+                      <div class="fs-16 text-303030 py-2 fw-medium">
+                        Read More Color
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="align-items-center card d-flex flex-row p-1 pe-2 rounded-pill w-138 py-5px">
+                      <div class="me-2">
+                        <input type="color" value="#0B1443" id="colorPicker" class="border-0 d-block h-30 m-0 outline-none p-0 rounded-pill shadow-none w-46">
+                      </div>
+                      <div class="picker-value fs-12">
+                        #0B1443
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Submit Button Color <span class="help-icon ms-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#00527A" fill-rule="evenodd" d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z"></path><path fill="#00527A" d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill="#00527A" fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path></svg></span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                <div class="row align-items-center pb-3">
+                  <div class="col-sm-4">
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path fill-rule="evenodd" d="m7.077 12.5-.978 2.5h.401a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1 0-1.5h.488l4.314-11.023a.75.75 0 0 1 .814-.468 1 1 0 0 1 1.06.613l4.45 10.878h.874a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1 0-1.5h.465l-1.023-2.5h-4.865Zm.587-1.5 1.792-4.578 1.873 4.578h-3.665Z"/></svg>
+                      <div class="fs-16 text-303030 py-2 fw-medium">
+                        Text Color
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="align-items-center card d-flex flex-row p-1 pe-2 rounded-pill w-138 py-5px">
+                      <div class="me-2">
+                        <input type="color" value="#F4F4F4" id="colorPicker" class="border-0 d-block h-30 m-0 outline-none p-0 rounded-pill shadow-none w-46">
+                      </div>
+                      <div class="picker-value fs-12">
+                        #A7A7A7
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col-sm-4">
+                    <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path d="M2.47 16.47c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l14-14c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-14 14Z"/><path d="M2.47 9.53c-.293-.293-.293-.767 0-1.06l6-6c.293-.293.767-.293 1.06 0 .293.293.293.767 0 1.06l-6 6c-.293.293-.767.293-1.06 0Z"/><path d="M2.47 5.53c-.293-.293-.293-.767 0-1.06l2-2c.293-.293.767-.293 1.06 0 .293.293.293.767 0 1.06l-2 2c-.293.293-.767.293-1.06 0Z"/><path d="M10.47 16.47c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l6-6c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-6 6Z"/><path d="M6.47 17.53c-.293-.293-.293-.767 0-1.06l10-10c.293-.293.767-.293 1.06 0 .293.293.293.767 0 1.06l-10 10c-.293.293-.767.293-1.06 0Z"/><path d="M2.47 12.47c-.293.293-.293.767 0 1.06.293.293.767.293 1.06 0l10-10c.293-.293.293-.767 0-1.06-.293-.293-.767-.293-1.06 0l-10 10Z"/><path d="M14.47 17.53c-.293-.293-.293-.767 0-1.06l2-2c.293-.293.767-.293 1.06 0 .293.293.293.767 0 1.06l-2 2c-.293.293-.767.293-1.06 0Z"/></svg>
+                      <div class="fs-16 text-303030 py-2 fw-medium">
+                        Background Color
+                      </div> 
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="align-items-center card d-flex flex-row p-1 pe-2 rounded-pill w-138 py-5px">
+                      <div class="me-2">
+                        <input type="color" value="#005CEA" id="colorPicker" class="border-0 d-block h-30 m-0 outline-none p-0 rounded-pill shadow-none w-46">
+                      </div>
+                      <div class="picker-value fs-12">
+                        #005CEA
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Review Controls <span class="help-icon ms-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#00527A" fill-rule="evenodd" d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z"></path><path fill="#00527A" d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill="#00527A" fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path></svg></span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                <div class="fs-14 pt-1">
+                  Auto Publish Reviews
+                </div>
+                <div class="radio-black pb-2 align-items-start flex-wrap auto-publish-reviews-checks">
+                  <div class="form-check custom-radio2 mt-1">
+                    <label class="form-check-label " for="autoPublishReviewsYes">
+                      <input class="form-check-input" type="radio" name="auto-publish-reviews" id="autoPublishReviewsYes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2 mt-1">
+                    <label class="form-check-label " for="autoPublishReviewsNo">
+                      <input class="form-check-input" type="radio" name="auto-publish-reviews" id="autoPublishReviewsNo" checked="">
+                      No
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2 mt-1">
+                    <label class="form-check-label " for="autoPublishReviewsMinimumStarRating">
+                      <input class="form-check-input" type="radio" name="auto-publish-reviews" id="autoPublishReviewsMinimumStarRating">
+                      Minimum Star Rating
+                    </label>
+                  </div>
+                </div>
+                <div class="radio-black pb-10 review-checks flex-wrap auto-publish-reviews-checks-reviews">
+                  <div class="fs-14 d-block w-100">
+                    Select Minimum Star Ratting
+                  </div>
+                  <div class="form-check custom-radio2 my-1 me-2">
+                    <label class="align-items-center d-flex form-check-label" for="ReviewType1">
+                      <input class="form-check-input wh-10-radio d-none" type="radio" name="reviewerType"
+                        id="ReviewType1" checked="">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg ms-1"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2 my-1 me-2">
+                    <label class="align-items-center d-flex form-check-label" for="ReviewType2">
+                      <input class="form-check-input wh-10-radio d-none" type="radio" name="reviewerType"
+                        id="ReviewType2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg ms-1"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2 my-1 me-2">
+                    <label class="align-items-center d-flex form-check-label" for="ReviewType3">
+                      <input class="form-check-input wh-10-radio d-none" type="radio" name="reviewerType"
+                        id="ReviewType3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg ms-1"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2 my-1 me-2">
+                    <label class="align-items-center d-flex form-check-label" for="ReviewType4">
+                      <input class="form-check-input wh-10-radio d-none" type="radio" name="reviewerType"
+                        id="ReviewType4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg ms-1"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2 my-1 me-2">
+                    <label class="align-items-center d-flex form-check-label" for="ReviewType5">
+                      <input class="form-check-input wh-10-radio d-none" type="radio" name="reviewerType"
+                        id="ReviewType5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg ms-1"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="17" class="rating-svg"><path fill="#D9D9D9" d="M11.128 4.123c-.453-.95-1.803-.95-2.256 0l-1.39 2.912-3.199.421c-1.042.138-1.46 1.422-.697 2.146l2.34 2.222-.587 3.172c-.192 1.034.901 1.828 1.825 1.327l2.836-1.54 2.836 1.54c.924.501 2.017-.293 1.825-1.327l-.587-3.172 2.34-2.222c.762-.724.345-2.008-.697-2.146l-3.2-.421-1.389-2.912Z"/></svg>
+                    </label>
+                  </div>
+                </div> 
+                <textarea class="form-control mb-3 fs-14" id="WriteaReviewButton" rows="4" placeholder="Comments"></textarea>
+                <div class="fs-14 text-303030 pt-1 pb-1">
+                  Write a Review Button
+                </div>
+                <div class="radio-black">
+                  <div class="form-check custom-radio2">
+                    <label class="form-check-label " for="WriteReviewButtonHide">
+                      <input class="form-check-input" type="radio" name="WriteReviewButton" id="WriteReviewButtonHide">
+                      Hide
+                    </label>
+                  </div>
+                  <div class="form-check custom-radio2">
+                    <label class="form-check-label " for="WriteReviewButtonShow">
+                      <input class="form-check-input" type="radio" name="WriteReviewButton" id="WriteReviewButtonShow" checked="">
+                      Show
+                    </label>
+                  </div> 
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Review Attachments <span class="help-icon ms-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#00527A" fill-rule="evenodd" d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z"></path><path fill="#00527A" d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill="#00527A" fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path></svg></span>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                <div>
+                  <div class="form-check form-switch mb-3">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="ActiveReviewRequest" checked="">
+                    <label class="form-check-label fw-medium ms-2" for="ActiveReviewRequest">Activate Review Attachments</label>
+                  </div>
+                  <div class="fs-14 text-303030 pt-1 pb-1">
+                    Show Attachments
+                  </div>
+                  <div class="radio-black pb-3 mb-1">
+                    <div class="form-check custom-radio2">
+                      <label class="form-check-label " for="ShowAttachmentsYes">
+                        <input class="form-check-input" type="radio" name="ShowAttachments" id="ShowAttachmentsYes" checked="">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check custom-radio2">
+                      <label class="form-check-label " for="ShowAttachmentsNo">
+                        <input class="form-check-input" type="radio" name="ShowAttachments" id="ShowAttachmentsNo">
+                        No
+                      </label>
+                    </div> 
+                  </div>
+                  <div class="col-md-7">
+                    <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Thumbnail Widtch <span class="help-icon ms-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#00527A" fill-rule="evenodd" d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z"></path><path fill="#00527A" d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill="#00527A" fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path></svg></span></label>
+                    <input type="number" class="form-select num-select" name="quantity" value="10" min="1" max="500">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Anonymous review
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                <div>
+                  <div class="form-check form-switch mb-3">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="activateReviewAttachments" checked="">
+                    <label class="form-check-label fw-medium ms-2" for="activateReviewAttachments">Activate Review Attachments</label>
+                  </div>
+                  <div class="fs-14 text-303030 pt-1 pb-1">
+                    Enable Anonymous review
+                  </div>
+                  <div class="radio-black">
+                    <div class="form-check custom-radio2">
+                      <label class="form-check-label " for="enableAnonymousReviewYes">
+                        <input class="form-check-input" type="radio" name="enableAnonymousReview" id="enableAnonymousReviewYes" checked="">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check custom-radio2">
+                      <label class="form-check-label " for="enableAnonymousReviewNo">
+                        <input class="form-check-input" type="radio" name="enableAnonymousReview" id="enableAnonymousReviewNo">
+                        No
+                      </label>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Review widget templates
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0">
+                <div class="container-fluid custom-acc pb-1">
+                  <div class="d-md-block d-none">
+                    <div class="row custom-acc-radio gy-2">
+                      <div class="col-md-6 col-lg-4 col-12">
+                        <div>
+                          <div class="form-check p-0 h-100 mb-10">
+                            <input class="form-check-input d-none" type="radio" name="customAccExportAllReview" id="customAccExportAllReview1">
+                            <label class="align-items-center d-flex h-100 justify-content-center" for="customAccExportAllReview1">
+                              <img src="images/Review-widget-templates-list.png" alt="" class="me-0 img-fluid">
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <button type="button" class="btn p-2 w-34">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/><path fill-rule="evenodd" d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z"/></svg>
+                            </button>
+                            <button type="button" class="btn btn-primary w-134">
+                              Activate theme
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-12">
+                        <div>
+                          <div class="form-check p-0 h-100 mb-10">
+                            <input class="form-check-input d-none" type="radio" name="customAccExportAllReview" id="customAccExportAllReview2">
+                            <label class="align-items-center d-flex h-100 justify-content-center" for="customAccExportAllReview2">
+                              <img src="images/Review-widget-templates-grid.png" alt="" class="me-0 img-fluid">
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <button type="button" class="btn p-2 w-34">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/><path fill-rule="evenodd" d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z"/></svg>
+                            </button>
+                            <button type="button" class="btn btn-primary w-134">
+                              Activate theme
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-12">
+                        <div>
+                          <div class="form-check p-0 h-100 mb-10">
+                            <input class="form-check-input d-none" type="radio" name="customAccExportAllReview" id="customAccExportAllReview3">
+                            <label class="align-items-center d-flex h-100 justify-content-center" for="customAccExportAllReview3">
+                              <img src="images/Review-widget-templates-slider.png" alt="" class="me-0 img-fluid">
+                            </label>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <button type="button" class="btn p-2 w-34">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill-rule="evenodd" d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/><path fill-rule="evenodd" d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z"/></svg>
+                            </button>
+                            <button type="button" class="btn btn-primary w-134">
+                              Activate theme
+                            </button>
+                          </div>
+                        </div>
+                      </div> 
+                    </div> 
+                  </div>
+                  <div class="d-block d-md-none">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide custom-acc" data-bs-touch="false">
+                      <div class="carousel-inner custom-acc-radio">
+                        <div class="carousel-item active text-center">
+                          <div class="bg-white d-inline-block form-check mb-10 p-0">
+                              <input class="form-check-input d-none" type="radio"
+                                  name="reviewWidgetThemeActivate" id="reviewWidgetThemeActivate1">
+                              <label class="align-items-center d-flex justify-content-center"
+                                  for="reviewWidgetThemeActivate1">
+                                  <img src="images/Review-widget-templates-list.png" alt=""
+                                      class="me-0 img-fluid">
+                              </label>
+                          </div>
+                          <div class="d-flex justify-content-center justify-content-center">
+                              <button type="button" class="btn p-2 w-34 me-2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                      width="20">
+                                      <path fill-rule="evenodd"
+                                          d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                      <path fill-rule="evenodd"
+                                          d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z" />
+                                  </svg>
+                              </button>
+                              <button type="button" class="btn btn-primary w-90">
+                                Activate theme
+                              </button>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="bg-white d-inline-block form-check mb-10 p-0">
+                              <input class="form-check-input d-none" type="radio"
+                                  name="reviewWidgetThemeActivate" id="reviewWidgetThemeActivate2">
+                              <label class="align-items-center d-flex justify-content-center"
+                                  for="reviewWidgetThemeActivate2">
+                                  <img src="images/Review-widget-templates-grid.png" alt=""
+                                      class="me-0 img-fluid">
+                              </label>
+                          </div>
+                          <div class="d-flex justify-content-center justify-content-center">
+                              <button type="button" class="btn p-2 w-34 me-2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                      width="20">
+                                      <path fill-rule="evenodd"
+                                          d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                      <path fill-rule="evenodd"
+                                          d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z" />
+                                  </svg>
+                              </button>
+                              <button type="button" class="btn btn-primary">
+                                Activate theme
+                              </button>
+                          </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                          <div class="bg-white d-inline-block form-check mb-10 p-0">
+                              <input class="form-check-input d-none" type="radio"
+                                  name="reviewWidgetThemeActivate" id="reviewWidgetThemeActivate3">
+                              <label class="align-items-center d-flex justify-content-center"
+                                  for="reviewWidgetThemeActivate3">
+                                  <img src="images/Review-widget-templates-slider.png" alt=""
+                                      class="me-0 img-fluid">
+                              </label>
+                          </div>
+                          <div class="d-flex justify-content-center justify-content-center">
+                              <button type="button" class="btn p-2 w-34 me-2">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                      width="20">
+                                      <path fill-rule="evenodd"
+                                          d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                                      <path fill-rule="evenodd"
+                                          d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z" />
+                                  </svg>
+                              </button>
+                              <button type="button" class="btn btn-primary">
+                                Activate theme
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev bg-theme-primary wh-28 rounded-circle p-1" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next bg-theme-primary wh-28 rounded-circle p-1" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8 pt-3 mt-1">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">"Show More" Review button title</label>
+                      <input type="number" class="form-select num-select" name="quantity" value="10" min="1" max="500">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#SortBySetup" aria-expanded="false" aria-controls="SortBySetup">
+                Sort By Setup (Only for Admin User)
+              </button>
+            </h2>
+            <div id="SortBySetup" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0 pb-0">
+                <div>
+                  <div class="mb-10">
+                    <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Default Sort By</label>
+                    <input type="number" class="form-select num-select" name="Most Recent" min="1" max="500" placeholder="Most Recent">
+                  </div>
+                  <div class="custom-acc-note fs-14 mb-3 d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="me-1" viewBox="0 0 20 20" width="24" style="min-width: 24px;"><path fill="#00527A" d="M10 6a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z"/><path fill="#00527A" d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path fill="#00527A" fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"/></svg>
+                    <span>After a change of “Default Sort By”, We need to Re-create Metafields. For Re-create Metafields We can go with “Bulk Action” and “Re-Publish Review”.</span>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="ms-1" viewBox="0 0 20 20" width="20"><path fill="#00527A" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg></a>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="SortBy" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="SortBy">Sort By</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="WithAttachmentField" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="WithAttachmentField">With Attachment Field</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="MostRecentField" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="MostRecentField">Most Recent Field</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="HighestRatingField" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="HighestRatingField">Highest Rating Field</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="LowestRatingField" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="LowestRatingField">Lowest Rating Field</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="MostVotesField" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="MostVotesField">Most Votes Field</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="LeastVotesField" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="LeastVotesField">Least Votes Field</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ShowVoteCount" aria-expanded="false" aria-controls="ShowVoteCount">
+                Show Vote Count
+              </button>
+            </h2>
+            <div id="ShowVoteCount" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0 pb-0">
+                <div>
+                  <div class="form-check form-switch mb-3">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="ShowVoteCountReviewVotes" checked="">
+                    <label class="form-check-label fw-medium ms-2" for="ShowVoteCountReviewVotes">Review votes</label>
+                  </div>
+                  <div class="form-check form-switch mb-3">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="ShowVoteReviewInappropriate" checked="">
+                    <label class="form-check-label fw-medium ms-2" for="ShowVoteReviewInappropriate">Review inappropriate</label>
+                  </div>
+                  <div class="mb-10">
+                    <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Report review message</label>
+                    <input type="text" class="form-control" placeholder="Report as inappropriate">
+                  </div>
+                  <div class="mb-10 pb-10">
+                    <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Report review success message</label>
+                    <input type="text" class="form-control" placeholder="This review has been reported">
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="CountryFlag" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="CountryFlag">Country flag</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="CountryName" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="CountryName">Country name</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="ReviewRecommendProduct" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="ReviewRecommendProduct">Review recommend product</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check form-switch mb-3">
+                        <input class="form-check-input switch-success" type="checkbox" role="switch" id="ReviewSocialShare" checked="">
+                        <label class="form-check-label fw-medium ms-2" for="ReviewSocialShare">Review social share</label>
+                      </div>
+                      <div class="d-flex flex-wrap g-2 row social-media">
+                        <div class="col-auto">
+                          <div class="form-check ps-0">
+                            <label class="align-items-center d-flex form-check-label fs-14 fw-medium text-theme-primary" for="FBPostShare">
+                              <input class="form-check-input d-none" type="checkbox" name="Visibility" id="FBPostShare"
+                                checked="">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#548BA5" d="M10 3c-3.866 0-7 3.154-7 7.045 0 3.506 2.544 6.414 5.875 6.955v-4.187h-1.875v-2.186h1.875v-1.666c0-1.895 1.103-2.942 2.79-2.942.808 0 1.653.148 1.653.148v1.86h-.931c-.918 0-1.204.584-1.204 1.182v1.418h2.048l-.327 2.186h-1.72v4.177c3.302-.566 5.816-3.46 5.816-6.945 0-3.89-3.134-7.045-7-7.045Z"/></svg>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check ps-0">
+                            <label class="align-items-center d-flex form-check-label fs-14 fw-medium text-theme-primary" for="ProviewsTest1">
+                              <input class="form-check-input d-none" type="checkbox" name="Visibility" id="ProviewsTest1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#548BA5" fill-rule="evenodd" d="M10 3c-1.901 0-2.14.008-2.886.042-.745.034-1.254.153-1.7.326-.466.175-.89.45-1.24.807-.355.35-.63.773-.807 1.24-.172.445-.29.954-.325 1.7-.034.746-.042.983-.042 2.885 0 1.902.008 2.14.042 2.886.034.745.153 1.254.326 1.7.175.466.45.89.807 1.24.35.355.773.63 1.24.807.445.172.954.29 1.7.325.746.034.984.042 2.885.042 1.901 0 2.14-.008 2.886-.042.745-.034 1.254-.153 1.7-.326.466-.175.89-.45 1.24-.807.355-.35.63-.773.807-1.24.172-.445.29-.954.325-1.7.034-.746.042-.984.042-2.885 0-1.901-.008-2.14-.042-2.886-.034-.745-.153-1.254-.326-1.7a3.432 3.432 0 0 0-.807-1.24 3.433 3.433 0 0 0-1.24-.807c-.445-.172-.954-.29-1.7-.325-.746-.034-.983-.042-2.885-.042Zm0 1.261c1.869 0 2.09.007 2.829.041.682.031 1.053.145 1.3.241.326.127.56.279.805.523.245.245.396.479.523.805.096.247.21.618.241 1.3.034.738.04.96.04 2.829 0 1.869-.006 2.09-.04 2.829-.031.682-.145 1.053-.241 1.3a2.173 2.173 0 0 1-.523.805c-.226.232-.501.41-.805.523-.247.096-.618.21-1.3.241-.738.034-.96.04-2.829.04-1.87 0-2.09-.006-2.829-.04-.682-.031-1.053-.145-1.3-.241a2.168 2.168 0 0 1-.805-.523 2.17 2.17 0 0 1-.523-.805c-.096-.247-.21-.618-.241-1.3-.034-.738-.04-.96-.04-2.829 0-1.869.006-2.09.04-2.829.031-.682.145-1.053.241-1.3.127-.326.279-.56.523-.805.226-.232.501-.41.805-.523.247-.096.618-.21 1.3-.241.738-.034.96-.04 2.829-.04Z"/><path fill="#548BA5" fill-rule="evenodd" d="M10 12.336a2.335 2.335 0 1 1 0-4.67 2.335 2.335 0 0 1 0 4.67Zm0-5.934a3.598 3.598 0 1 0 0 7.196 3.598 3.598 0 0 0 0-7.196Zm4.645-.065a.85.85 0 1 1-1.701 0 .85.85 0 0 1 1.7 0Z"/></svg></label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check ps-0">
+                            <label class="align-items-center d-flex form-check-label fs-14 fw-medium text-theme-primary" for="ProviewsTest3">
+                              <input class="form-check-input d-none" type="checkbox" name="Visibility" id="ProviewsTest3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#548BA5" fill-rule="evenodd" d="M12.906 17h4l-5.302-7.814 5.302-6.186h-1.414l-4.523 5.252-3.563-5.252h-4.156l5.444 7.894-5.258 6.106h1.47l4.433-5.172 3.567 5.172Zm-7.275-12.75 7.931 11.5h.985l-7.803-11.5h-1.113Z"/></svg></label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check ps-0">
+                            <label class="align-items-center d-flex form-check-label fs-14 fw-medium text-theme-primary" for="ProviewsTest2">
+                              <input class="form-check-input d-none" type="checkbox" name="Visibility" id="ProviewsTest2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#548BA5" fill-rule="evenodd" d="M4 8.347c0-2.787 2.153-5.347 6.208-5.347 3.26 0 5.792 2.184 5.792 5.103 0 3.045-2.042 5.495-4.875 5.495-.953 0-1.847-.465-2.153-1.014l-.586 2.1c-.212.767-.784 1.73-1.168 2.316a9.717 9.717 0 0 1-.643-.22c-.082-.699-.155-1.768.034-2.528.17-.69 1.101-4.392 1.101-4.392s-.28-.53-.28-1.311c0-1.23.756-2.146 1.699-2.146.802 0 1.188.566 1.188 1.244 0 .485-.21 1.123-.43 1.795-.124.378-.252.768-.348 1.147-.221.88.47 1.597 1.391 1.597 1.67 0 2.954-1.656 2.954-4.046 0-2.115-1.616-3.595-3.924-3.595-2.673 0-4.242 1.886-4.242 3.835 0 .76.31 1.573.7 2.016.076.088.087.164.064.254-.043.169-.118.456-.178.683l-.083.319c-.04.162-.136.195-.314.118-1.173-.514-1.907-2.127-1.907-3.423Z"/></svg></label>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Review Content
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0 pb-0">
+                <div> 
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Text limit</label> 
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>The entire review,no matter how...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select> 
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Read more text</label>
+                      <input type="text" class="form-select num-select" value="Read More" placeholder="Read More">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Review pagination <span class="help-icon ms-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#00527A" fill-rule="evenodd" d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z"></path><path fill="#00527A" d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill="#00527A" fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path></svg></span></label>
+                      <input type="number" class="form-select num-select" name="quantity" value="10" min="1" max="500">
+                    </div>
+                    <div class="col-md-6">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Default from rating <span class="help-icon ms-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Lorem ipsum dolor sit amet">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#00527A" fill-rule="evenodd" d="M10 7.25c-.69 0-1.25.56-1.25 1.25a.75.75 0 0 1-1.5 0 2.75 2.75 0 1 1 3.758 2.56.61.61 0 0 0-.226.147.154.154 0 0 0-.032.046.75.75 0 0 1-1.5-.003c0-.865.696-1.385 1.208-1.586a1.25 1.25 0 0 0-.458-2.414Z"></path><path fill="#00527A" d="M10 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path><path fill="#00527A" fill-rule="evenodd" d="M10 17a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm0-1.5a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"></path></svg></span></label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>5 Star</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Review and Replay
+              </button>
+            </h2>
+            <div id="collapseNine" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0 pb-0">
+                <div class="row gy-md-0 g-2"> 
+                  <div class="col-md-12">
+                    <div class="pb-3 mb-1">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Reviews name details</label>
+                        <input type="text" class="form-control fs-14 h-40" id="productGroup" placeholder="[!shop_name!] replied:">
+                    </div>
+                    <div class="pb-3 mb-1">
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Reviewer Name</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select product group</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select> 
+                    </div>
+                    <div>
+                      <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Reviews name details</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select product group</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select> 
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item card mb-3">
+            <h2 class="accordion-header px-1">
+              <button class="accordion-button bg-transparent fs-16 fw-semibold p-0 text-303030 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#EnableQuestionAnswer" aria-expanded="false" aria-controls="EnableQuestionAnswer">
+                Enable Question Answer (Only for Admin User)
+              </button>
+            </h2>
+            <div id="EnableQuestionAnswer" class="accordion-collapse px-1 collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body px-0 pb-0">
+                <div>
+                  <div class="form-check form-switch mb-3">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="EnableQuestionAnswerShowVoteCountReviewVotes" checked="">
+                    <label class="form-check-label fw-medium ms-2" for="EnableQuestionAnswerShowVoteCountReviewVotes">It enables the “Ask a Question”button along with “List of Question and Answers” beside the write a review button</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="EnableQuestionAnswerShowVoteReviewInappropriate" checked="">
+                    <label class="form-check-label fw-medium ms-2" for="EnableQuestionAnswerShowVoteReviewInappropriate">It enables the “Ask a Question”</label>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-4 d-md-block d-none">
+          <div class="d-flex justify-content-end mb-3">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#widgetDesktopView">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path fill-rule="evenodd" d="M3.5 6.25a2.75 2.75 0 0 1 2.75-2.75h7.5a2.75 2.75 0 0 1 2.75 2.75v4.5a2.75 2.75 0 0 1-2.75 2.75h-1.25v1.5h.75a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h.75v-1.5h-1.25a2.75 2.75 0 0 1-2.75-2.75v-4.5Zm5.5 7.25h2v1.5h-2v-1.5Zm-2.75-8.5c-.69 0-1.25.56-1.25 1.25v3.25h10v-3.25c0-.69-.56-1.25-1.25-1.25h-7.5Zm8.725 6c-.116.57-.62 1-1.225 1h-7.5a1.25 1.25 0 0 1-1.225-1h9.95Z"></path></svg> Desktop View
+            </button>
+          </div>
+          <div class="mob-card pb-5 text-center bg-white">
+            <img src="images/mobile-notification-panel.svg" alt="" class="d-block img-fluid rounded-1 mb-5 mx-auto pb-3">
+            <img src="images/widget-desktop-view.png" alt="" class="d-block img-fluid mt-3 mx-auto">
+          </div>
+      </div>
+      </div>
+      
+    </div>
+    
+  
+  </div>
+  <div class="modal modal-theme-with-header fade" id="widgetDesktopView" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                  <h5 class="modal-title">Desktop View</h5>
+                  <button type="button" class="btn close-btn-box" data-bs-dismiss="modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><path fill="#A0A0A0" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg></button>
+                </div>
+                <div class="modal-body text-center px-md-5 pt-4 pb-4 mb-3">
+                  <img src="images/desktop-view.png" alt="" class="img-fluid">
+                </div> 
+              </div>
+            </div>
+          </div>
+
+          <div class="modal modal-theme-with-header fade" id="ReviewCouponsMobileView" data-bs-backdrop="static"
+                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-between">
+                          <h5 class="modal-title" id="modalTitle">Desktop View</h5>
+                          <div class="d-flex">
+                            <a href="javascript:void(0);" class="px-1 active" id="deskView">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#616161" fill-rule="evenodd" d="M3.5 6.25a2.75 2.75 0 0 1 2.75-2.75h7.5a2.75 2.75 0 0 1 2.75 2.75v4.5a2.75 2.75 0 0 1-2.75 2.75h-1.25v1.5h.75a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h.75v-1.5h-1.25a2.75 2.75 0 0 1-2.75-2.75v-4.5Zm5.5 7.25h2v1.5h-2v-1.5Zm-2.75-8.5c-.69 0-1.25.56-1.25 1.25v3.25h10v-3.25c0-.69-.56-1.25-1.25-1.25h-7.5Zm8.725 6c-.116.57-.62 1-1.225 1h-7.5a1.25 1.25 0 0 1-1.225-1h9.95Z"/></svg>
+                            </a>
+                            <a href="javascript:void(0);" class="px-1" id="mobView">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#616161" d="M7.75 13.75a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1-.75-.75Z"/><path fill="#616161" fill-rule="evenodd" d="M4.75 5.75a2.75 2.75 0 0 1 2.75-2.75h5a2.75 2.75 0 0 1 2.75 2.75v8.5a2.75 2.75 0 0 1-2.75 2.75h-5a2.75 2.75 0 0 1-2.75-2.75v-8.5Zm2.75-1.25c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25h5c.69 0 1.25-.56 1.25-1.25v-8.5c0-.69-.56-1.25-1.25-1.25h-.531a1 1 0 0 1-.969.75h-2a1 1 0 0 1-.969-.75h-.531Z"/></svg>
+                            </a>
+                            <button type="button" class="btn close-btn-box ms-1" data-bs-dismiss="modal">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                                <path fill="#A0A0A0"
+                                  d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="modal-body text-center px-md-5 pt-4 pb-4 mb-3">
+                          <div class="desktop-card" id="deskCard" style="display: block;">
+                           <img src="images/desktop-view.png" alt="" class="img-fluid">
+                          </div>
+                          <div class="mob-card text-center" id="mobCard" style="display: none;">
+                            <img src="images/mobile-notification-panel.svg" alt=""
+                              class="d-block img-fluid rounded-1 mb-5 mx-auto">
+                            <img src="images/Review-Coupons-desktop-view.png" alt="" class="d-block img-fluid mt-3 mx-auto">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  <!-- Import and export end -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/selectize.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

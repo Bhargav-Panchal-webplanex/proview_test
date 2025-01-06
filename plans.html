@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proview App</title>
+<link rel="icon" type="image/svg" href="images/Uploaded-Favicon.svg">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/plans.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body class="bg-F5F7F7"> 
+  <!-- breadcrumb start -->
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb" class="breadcrumb-bg py-2 row justify-content-between align-items-center fs-14 gy-3 gy-sm-0">
+        <div class="col-sm-auto">
+            <ol class="breadcrumb mb-0 ps-sm-2">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="22" width="22" fill="#616161"><path fill-rule="evenodd" d="M8.344 3.692a2.25 2.25 0 0 1 3.312 0l3.854 4.19a3.75 3.75 0 0 1 .99 2.538v3.33a2.75 2.75 0 0 1-2.75 2.75h-1.75a1.5 1.5 0 0 1-1.5-1.5v-2h-1v2a1.5 1.5 0 0 1-1.5 1.5h-1.75a2.75 2.75 0 0 1-2.75-2.75v-3.33c0-.94.353-1.847.99-2.539l3.854-4.189Zm2.208 1.016a.75.75 0 0 0-1.104 0l-3.854 4.189a2.25 2.25 0 0 0-.594 1.523v3.33c0 .69.56 1.25 1.25 1.25h1.75v-2a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v2h1.75c.69 0 1.25-.56 1.25-1.25v-3.33a2.25 2.25 0 0 0-.594-1.523l-3.854-4.19Z"/></svg> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Plans</li>
+            </ol>
+        </div>
+        <div class="col-sm-auto order-sm-last order-first">
+            <ul class="d-flex list-unstyled mb-0">
+                <li class="border-end border-secondary me-2 pe-2">
+                    <div class="dropdown">
+                        <button class="border-0 text-616 dropdown-toggle fs-14" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ENG
+                        </button>
+                        <ul class="dropdown-menu fs-14">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another</a></li>
+                          <li><a class="dropdown-item" href="#">Something</a></li>
+                        </ul>
+                      </div> 
+                </li>
+                <li class="px-1">
+                    <a href="#" class="text-decoration-none">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0942 16.1337C15.0698 16.0589 15.025 15.9923 14.9648 15.9416C14.9046 15.8908 14.8314 15.858 14.7535 15.8466L13.1113 15.608L12.3769 14.1199C12.3421 14.0493 12.2882 13.9899 12.2213 13.9483C12.1545 13.9068 12.0773 13.8848 11.9986 13.8848C11.9199 13.8848 11.8427 13.9068 11.7759 13.9483C11.709 13.9899 11.6551 14.0493 11.6203 14.1199L10.8859 15.608L9.24368 15.8466C9.16578 15.858 9.0926 15.8908 9.03241 15.9416C8.97222 15.9923 8.92743 16.0589 8.90309 16.1337C8.87877 16.2086 8.87588 16.2888 8.89475 16.3652C8.91361 16.4416 8.95348 16.5113 9.00984 16.5662L10.1982 17.7245L9.91764 19.3601C9.90431 19.4377 9.91297 19.5175 9.94262 19.5904C9.97227 19.6633 10.0217 19.7265 10.0854 19.7728C10.1491 19.8191 10.2245 19.8466 10.303 19.8523C10.3815 19.8579 10.4601 19.8415 10.5298 19.8049L11.9986 19.0326L13.4675 19.8049C13.5372 19.8415 13.6157 19.8579 13.6942 19.8523C13.7727 19.8466 13.8481 19.819 13.9118 19.7728C13.9755 19.7265 14.0249 19.6633 14.0546 19.5904C14.0843 19.5175 14.0929 19.4377 14.0796 19.3601L13.7991 17.7245L14.9874 16.5662C15.0438 16.5113 15.0837 16.4417 15.1025 16.3652C15.1214 16.2888 15.1185 16.2086 15.0942 16.1337ZM8.27156 16.1338C8.2472 16.059 8.20239 15.9924 8.14219 15.9416C8.08199 15.8909 8.0088 15.858 7.93089 15.8467L6.28867 15.608L5.55428 14.12C5.51944 14.0494 5.46554 13.9899 5.39868 13.9484C5.33183 13.9068 5.25468 13.8848 5.17596 13.8848C5.09724 13.8848 5.0201 13.9068 4.95324 13.9484C4.88639 13.9899 4.83249 14.0494 4.79764 14.12L4.06326 15.608L2.42104 15.8467C2.34314 15.858 2.26996 15.8909 2.20977 15.9416C2.14958 15.9924 2.10479 16.0589 2.08044 16.1338C2.05613 16.2087 2.05324 16.2888 2.07211 16.3653C2.09097 16.4417 2.13084 16.5113 2.1872 16.5663L3.37552 17.7246L3.09503 19.3602C3.08172 19.4378 3.09039 19.5176 3.12005 19.5905C3.14971 19.6634 3.19918 19.7266 3.26286 19.7728C3.32655 19.8191 3.40191 19.8466 3.48042 19.8523C3.55894 19.858 3.63748 19.8416 3.70715 19.8049L5.176 19.0327L6.64489 19.8049C6.71456 19.8416 6.7931 19.858 6.87162 19.8523C6.95014 19.8467 7.02551 19.8191 7.08919 19.7728C7.15287 19.7266 7.20234 19.6634 7.232 19.5905C7.26166 19.5176 7.27032 19.4378 7.25701 19.3602L6.97648 17.7246L8.16481 16.5663C8.22118 16.5114 8.26105 16.4417 8.27992 16.3653C8.29878 16.2889 8.29589 16.2087 8.27156 16.1338ZM21.9169 16.1337C21.8925 16.0589 21.8477 15.9923 21.7875 15.9416C21.7273 15.8909 21.6541 15.858 21.5762 15.8467L19.934 15.608L19.1996 14.12C19.1648 14.0494 19.1109 13.9899 19.044 13.9484C18.9772 13.9068 18.9 13.8848 18.8213 13.8848C18.7426 13.8848 18.6654 13.9068 18.5986 13.9484C18.5317 13.9899 18.4778 14.0494 18.443 14.12L17.7086 15.608L16.0664 15.8467C15.9885 15.858 15.9153 15.8909 15.8551 15.9416C15.7949 15.9924 15.7501 16.0589 15.7258 16.1338C15.7015 16.2087 15.6986 16.2888 15.7174 16.3653C15.7363 16.4417 15.7762 16.5113 15.8325 16.5663L17.0208 17.7246L16.7403 19.3602C16.727 19.4378 16.7356 19.5175 16.7653 19.5905C16.795 19.6634 16.8444 19.7266 16.9081 19.7728C16.9718 19.8191 17.0472 19.8466 17.1257 19.8523C17.2042 19.858 17.2828 19.8415 17.3524 19.8049L18.8213 19.0327L20.2902 19.8049C20.3599 19.8415 20.4384 19.8579 20.5169 19.8523C20.5954 19.8466 20.6708 19.8191 20.7345 19.7728C20.7982 19.7265 20.8476 19.6634 20.8773 19.5904C20.9069 19.5175 20.9156 19.4378 20.9023 19.3602L20.6218 17.7246L21.8101 16.5662C21.8665 16.5113 21.9064 16.4417 21.9252 16.3652C21.9441 16.2888 21.9412 16.2086 21.9169 16.1337ZM19.387 4.28577H4.61025C3.01267 4.28577 1.71289 5.5855 1.71289 7.18312V9.13817C1.71289 10.6298 2.84577 11.8618 4.29641 12.0186L4.92288 12.8532C5.12939 13.1284 5.44508 13.2893 5.78901 13.2946L5.80673 13.2947C6.14394 13.2947 6.45718 13.1444 6.66844 12.8805L7.34508 12.0355H19.387C20.9846 12.0355 22.2843 10.7358 22.2843 9.13813V7.18308C22.2843 5.5855 20.9845 4.28577 19.387 4.28577ZM10.7061 9.95042H5.22032C4.88748 9.95042 4.61764 9.68058 4.61764 9.34774C4.61764 9.0149 4.88748 8.74507 5.22032 8.74507H10.7061C11.039 8.74507 11.3088 9.0149 11.3088 9.34774C11.3088 9.68058 11.039 9.95042 10.7061 9.95042ZM18.7769 7.52717H5.22032C4.88748 7.52717 4.61764 7.25733 4.61764 6.92449C4.61764 6.59166 4.88748 6.32182 5.22032 6.32182H18.7769C19.1097 6.32182 19.3796 6.59166 19.3796 6.92449C19.3796 7.25733 19.1097 7.52717 18.7769 7.52717Z" fill="#616161"/>
+                            </svg>    
+                    </a>
+                </li>
+                <li class="px-1">
+                        <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#navSearchModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#616161" fill-rule="evenodd" d="M12.323 13.383a5.5 5.5 0 1 1 1.06-1.06l2.897 2.897a.75.75 0 1 1-1.06 1.06l-2.897-2.897Zm.677-4.383a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>
+                        </a> 
+                        <div class="modal modal-theme-with-header fade px-2 nav-search-modal" id="navSearchModal" data-bs-backdrop="true"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body px-md-3 mx-1">
+                                        <div class="input-group h-54">
+                                            <span class="bg-white border-D8D8D8 h-40 input-group-text pe-0 py-2 rounded-bottom-0 rounded-start-3 nav-searchbar-icon" id="navSearchbarIcon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#616161" fill-rule="evenodd" d="M12.323 13.383a5.5 5.5 0 1 1 1.06-1.06l2.897 2.897a.75.75 0 1 1-1.06 1.06l-2.897-2.897Zm.677-4.383a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"></path></svg></span>
+                                            <input type="text" class="fs-14 border-D8D8D8 border-start-0 border-end-0 form-control h-40 ps-2 py-2 rounded-end-0 nav-searchbar" placeholder="Find settings (Keyboard shortcut : Ctrl+Shift+F)" aria-label="Username" aria-describedby="basic-addon1">
+                                            <button type="button" class="bg-white border-D8D8D8 h-40 input-group-text pe-0 py-2 rounded-start-0 border-start-0 nav-searchbar-icon rounded-end-3 pe-2" id="navSearchbarIcon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                                            </button>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Product Review</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Site Review</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Question & Answer</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Product Grouping</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > View Orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Review & QA > Import & Export</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting> Integration</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting > Theme Setting</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting > Custom CSS (Admin Only)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="d-block text-616 text-decoration-none px-3 py-2">Setting > Feature Enable/Disable</a>
+                                            </li> 
+                                        </ul>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <li class="px-1">
+                    <a href="notifications.html" class="text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#616161" fill-rule="evenodd" d="m7.252 14.424-2.446-.281c-1.855-.213-2.38-2.659-.778-3.616l.065-.038a2.887 2.887 0 0 0 1.407-2.48v-.509a4.5 4.5 0 0 1 9 0v.51c0 1.016.535 1.958 1.408 2.479l.065.038c1.602.957 1.076 3.403-.778 3.616l-2.543.292v.365a2.7 2.7 0 0 1-5.4 0v-.376Zm3.9.076h-2.4v.3a1.2 1.2 0 0 0 2.4 0v-.3Zm-3.152-1.5h4l3.024-.348a.452.452 0 0 0 .18-.837l-.065-.038a4.414 4.414 0 0 1-.747-.562 4.387 4.387 0 0 1-1.392-3.205v-.51a3 3 0 0 0-6 0v.51a4.387 4.387 0 0 1-2.138 3.767l-.065.038a.452.452 0 0 0 .18.838l3.023.347Z"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- breadcrumb end -->
+  <!-- Import and export start -->
+  <div class="container pb-5">
+    <div class="row justify-content-center pb-4 gy-3 gy-md-0">
+      <div class="col-md-6 col-sm-8 text-center">
+          <h1 class="fw-semibold fs-30 mb-2">
+            Pay Only for What You Need
+          </h1>
+          <p class="text-616 mb-3 pb-1">
+            Pay for 10 months and get 2 months free on yearly plans. Yearly plans are completely non-refundable.
+          </p> 
+          <nav class="plans-tab">
+            <div class="border-0 fs-12 justify-content-center mb-3 nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="active fw-medium nav-link rounded-end-0 rounded-start-3" id="MonthlyTab" data-bs-toggle="tab" data-bs-target="#Monthly" type="button" role="tab" aria-controls="Monthly" aria-selected="true">Monthly</button>
+              <button class="border-start-0 fw-medium nav-link rounded-end-3 rounded-start-0" id="YearlyTab" data-bs-toggle="tab" data-bs-target="#Yearly" type="button" role="tab" aria-controls="Yearly" aria-selected="false">Yearly <span class="text-theme-primary per-15-bg rounded-pill px-1 ms-1 d-inline-block">-15%</span></button> 
+            </div>
+          </nav>
+      </div>
+    </div> 
+    <div class="tab-content plans-tab-content bg-light mb-4" id="nav-tabContent">
+      <div class="tab-pane fade active show" id="Monthly" role="tabpanel" aria-labelledby="MonthlyTab">
+        <div class="row list-yes g-3">
+          <div class="col-lg-3 col-sm-6">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.96875 9.53333C8.82055 11.2783 9.40208 19.0667 9.40208 19.0667C9.40208 19.0667 9.98362 11.2783 17.8354 9.53333C9.98362 7.78837 9.40208 0 9.40208 0C9.40208 0 8.82055 7.78837 0.96875 9.53333ZM12.7021 16.8667C13.9388 17.1051 15.0675 17.7311 15.9246 18.6541C16.7816 19.5771 17.3225 20.749 17.4688 22C17.615 20.749 18.1559 19.5771 19.0129 18.6541C19.87 17.7311 20.9987 17.1051 22.2354 16.8667C20.9987 16.6283 19.87 16.0022 19.0129 15.0792C18.1559 14.1563 17.615 12.9843 17.4688 11.7333C17.3225 12.9843 16.7816 14.1563 15.9246 15.0792C15.0675 16.0022 13.9388 16.6283 12.7021 16.8667Z" fill="url(#paint0_linear_1257_20469654)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_1257_20469654" x1="11.6021" y1="0" x2="11.6021" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#B0B0B0"/>
+                      <stop offset="1" stop-color="#737373"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                  </div>
+                </div>
+                <div class="current rounded-pill">
+                  <div class="current-badge d-block rounded-pill ps-10 pe-10 py-1 text-white fs-12">
+                    Current
+                  </div>
+                </div>
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                FREE
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$0</span> /month
+              </div>
+              <div class="fs-14 mb-4">
+                No billed generated all 
+time free
+              </div>
+              <button class="btn" type="button">
+                Active Plan
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">50 Review Requests/Month</li>
+                <li class="pb-10">Unlimited Import/Export product reviews</li>
+                <li class="pb-10">Unlimited Q&A</li>
+                <li>Limited Features available</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">                    
+                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.35818 0.6875C8.30568 0.689943 8.25446 0.704461 8.20849 0.729924C8.16252 0.755387 8.12305 0.79111 8.09313 0.834314L0.187268 12.1767C0.151144 12.2282 0.129863 12.2888 0.125739 12.3516C0.121615 12.4144 0.134807 12.4772 0.163879 12.5331C0.192951 12.5889 0.23679 12.6358 0.290623 12.6685C0.344457 12.7011 0.406224 12.7184 0.469202 12.7184H5.93899L5.28288 20.9426C5.25689 21.2895 5.70513 21.4493 5.90651 21.1661L13.8137 9.82374C13.8498 9.77215 13.8711 9.71165 13.8752 9.6488C13.8793 9.58596 13.8661 9.52319 13.8371 9.46732C13.808 9.41146 13.7642 9.36463 13.7103 9.33195C13.6565 9.29927 13.5947 9.28198 13.5317 9.28196H8.06195L8.71806 1.05778C8.72161 1.00919 8.71481 0.960405 8.69811 0.914641C8.6814 0.868877 8.65517 0.827179 8.62116 0.792302C8.58714 0.757426 8.54611 0.730166 8.50077 0.712324C8.45544 0.694482 8.40684 0.685164 8.35818 0.6875Z" fill="url(#paint0_linear_1257_20475654)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_1257_20475654" x1="7.00047" y1="0.6875" x2="7.00047" y2="21.3117" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#B0B0B0"/>
+                  <stop offset="1" stop-color="#737373"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>  
+                  </div>
+                </div> 
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                BEGINNER
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$4.99</span> /month
+              </div>
+              <div class="fs-14 mb-4">
+                or $4.16/month billed at $49.90 once per year
+              </div>
+              <button class="btn" type="button">
+                Active Subscription
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">1000 Review Requests/Month</li>
+                <li class="pb-10">Google Shopping (Product rating feed)</li>
+                <li class="pb-10">Social Push (Facebook)</li>
+                <li class="pb-10">Email branding</li>
+                <li>Site Reviews</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 recommend">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.2321 2.83462H18.5109V2.73862C18.5109 2.37489 18.3664 2.02606 18.1093 1.76887C17.8521 1.51168 17.5032 1.36719 17.1395 1.36719H6.85379C6.09951 1.36719 5.48237 1.98433 5.48237 2.73862V2.83462H3.76808C2.62979 2.83462 1.71094 3.76033 1.71094 4.89176V5.58433C1.71094 7.81976 3.37037 9.67804 5.53037 9.98662C5.67091 11.2388 6.17215 12.4231 6.97314 13.3958C7.77414 14.3684 8.84041 15.0874 10.0424 15.4655L9.16465 17.742H14.8355L13.9578 15.4655C15.1598 15.0876 16.2262 14.3686 17.0272 13.3959C17.8282 12.4233 18.3294 11.2388 18.4698 9.98662C20.6229 9.67804 22.2892 7.81976 22.2892 5.58433V4.89176C22.2892 3.76033 21.3635 2.83462 20.2321 2.83462ZM5.48237 8.58776C4.11094 8.27233 3.08237 7.05176 3.08237 5.58433V4.89176C3.08237 4.51462 3.39094 4.20604 3.76808 4.20604H5.48237V8.58776ZM15.1509 8.31347L14.0812 9.36262L14.3281 10.8369C14.4241 11.406 13.8344 11.838 13.3201 11.5706L11.9967 10.8712L10.6664 11.5706C10.1658 11.838 9.56922 11.406 9.66522 10.8369L9.91894 9.36262L8.84922 8.31347C8.43094 7.9089 8.66408 7.20947 9.22637 7.12719L10.7144 6.91462L11.3795 5.57062C11.4368 5.45499 11.5253 5.35766 11.6349 5.28962C11.7446 5.22158 11.871 5.18553 12.0001 5.18553C12.1291 5.18553 12.2556 5.22158 12.3653 5.28962C12.4749 5.35766 12.5634 5.45499 12.6207 5.57062L13.2858 6.91462L14.7669 7.13404C15.3361 7.21633 15.5624 7.91576 15.1509 8.31347ZM20.9178 5.58433C20.9178 7.0449 19.8892 8.27233 18.5109 8.58776V4.20604H20.2321C20.6092 4.20604 20.9178 4.51462 20.9178 4.89176V5.58433ZM18.7653 21.2556H17.5105V21.2392C17.5105 20.96 17.4555 20.6836 17.3487 20.4257C17.2418 20.1678 17.0853 19.9335 16.8879 19.7361C16.6905 19.5387 16.4561 19.3821 16.1982 19.2753C15.9403 19.1685 15.6639 19.1135 15.3848 19.1135H8.61265C8.04888 19.1135 7.50819 19.3374 7.10954 19.7361C6.7109 20.1347 6.48694 20.6754 6.48694 21.2392V21.2556H5.23208C5.14203 21.2556 5.05286 21.2734 4.96967 21.3078C4.88647 21.3423 4.81088 21.3928 4.74721 21.4565C4.68353 21.5202 4.63302 21.5958 4.59856 21.6789C4.5641 21.7621 4.54637 21.8513 4.54637 21.9414C4.54637 22.0314 4.5641 22.1206 4.59856 22.2038C4.63302 22.287 4.68353 22.3626 4.74721 22.4262C4.81088 22.4899 4.88647 22.5404 4.96967 22.5749C5.05286 22.6093 5.14203 22.6271 5.23208 22.6271H18.766C18.9479 22.6271 19.1223 22.5548 19.2509 22.4262C19.3795 22.2976 19.4517 22.1232 19.4517 21.9414C19.4517 21.7595 19.3795 21.5851 19.2509 21.4565C19.1223 21.3279 18.9479 21.2556 18.766 21.2556H18.7653Z" fill="url(#paint0_linear_1257_20479654)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1257_20479654" x1="12.0001" y1="1.36719" x2="12.0001" y2="22.6271" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="#A3D5EC"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>  
+                  </div>
+                </div>
+                <div class="recommend-badge rounded-pill">
+                  <div class=" d-block rounded-pill ps-10 pe-10 py-1 text-white fs-12">
+                    Recommend
+                  </div>
+                </div>
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                ADVANCED
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$8.99</span> /month
+              </div>
+              <div class="fs-14 mb-4">
+                or $7.49/month billed at $89.90 once per year
+              </div>
+              <button class="btn btn-primary" type="button">
+                Active Subscription
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">2500 Review Requests/Month</li>
+                <li>All features available from the Beginner plan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                  <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.6499 19.1816C7.04169 19.3748 6.38668 19.3615 5.78682 19.1437C5.18387 18.9242 4.67462 18.5102 4.33534 17.9754C3.70235 17.949 3.08913 17.7148 2.5977 17.3024C2.5358 17.2506 2.47616 17.1961 2.41896 17.1391L0.851239 20.42C0.793571 20.5407 0.771065 20.6752 0.786299 20.8081C0.801533 20.941 0.85389 21.0669 0.937374 21.1714C1.02086 21.276 1.13209 21.3549 1.25834 21.3991C1.38459 21.4433 1.52074 21.4511 1.6512 21.4216L4.79368 20.7089L6.21329 23.6016C6.27196 23.7211 6.36294 23.8217 6.47592 23.8922C6.58889 23.9626 6.71934 23.9999 6.85247 24H6.85631C6.99008 23.9993 7.12094 23.9609 7.2339 23.8892C7.34686 23.8176 7.43734 23.7155 7.49498 23.5948L9.31747 19.7811C8.71259 19.7606 8.12937 19.551 7.6499 19.1816ZM16.2294 17.3024C15.738 17.7148 15.1246 17.9488 14.4918 17.9752C14.1525 18.5102 13.6431 18.9242 13.0401 19.1435C12.4373 19.3631 11.7809 19.3734 11.1772 19.1817C10.6978 19.551 10.1146 19.7606 9.50975 19.7811L11.332 23.5949C11.3897 23.7156 11.4802 23.8175 11.5932 23.8892C11.7062 23.9608 11.8371 23.9992 11.9709 23.9999H11.9745C12.1076 23.9999 12.2381 23.9626 12.3511 23.8922C12.4641 23.8218 12.5551 23.7211 12.6137 23.6016L14.0335 20.7089L17.176 21.4214C17.3064 21.4511 17.4426 21.4434 17.5688 21.3991C17.6951 21.3549 17.8063 21.276 17.8897 21.1714C17.9732 21.0669 18.0256 20.941 18.0408 20.8081C18.0561 20.6752 18.0336 20.5407 17.9759 20.42L16.408 17.1391C16.3508 17.1961 16.2912 17.2506 16.2294 17.3024ZM18.165 8.7412C18.2913 8.57944 18.3822 8.393 18.4319 8.19393C18.4816 7.99486 18.489 7.78757 18.4536 7.58546C18.4178 7.38343 18.3399 7.19117 18.2252 7.02109C18.1104 6.85101 17.9612 6.70687 17.7873 6.59799C17.6526 6.51383 17.55 6.38705 17.4956 6.23781C17.4413 6.08857 17.4385 5.92545 17.4875 5.7744C17.5508 5.57922 17.5725 5.37293 17.5511 5.16886C17.5297 4.96479 17.4657 4.76748 17.3632 4.58969C17.2605 4.41209 17.1216 4.25803 16.9555 4.13745C16.7895 4.01687 16.6 3.93246 16.3994 3.88967C16.244 3.85663 16.1042 3.77262 16.0021 3.65099C15.9 3.52937 15.8415 3.37711 15.8359 3.21842C15.8286 3.01337 15.7784 2.81213 15.6885 2.62769C15.5987 2.44325 15.4711 2.2797 15.3141 2.14761C14.997 1.88136 14.5797 1.76202 14.1688 1.81949C13.8454 1.8651 13.5323 1.68421 13.4098 1.38135C13.3329 1.19111 13.2169 1.01914 13.0693 0.876547C12.9217 0.733953 12.7459 0.623915 12.5531 0.553544C12.3602 0.483568 12.1548 0.454838 11.9502 0.46921C11.7455 0.483582 11.5461 0.540737 11.3649 0.636981C11.2246 0.711461 11.0635 0.736923 10.907 0.709321C10.7506 0.681719 10.6079 0.602637 10.5016 0.484638C10.2242 0.176718 9.82756 0 9.41366 0C8.99975 0 8.60301 0.176718 8.3256 0.484685C8.21927 0.602683 8.07656 0.681766 7.92014 0.709368C7.76372 0.736969 7.60256 0.711508 7.46226 0.637028C7.28108 0.540783 7.08171 0.483624 6.87705 0.469243C6.67239 0.454863 6.46699 0.483582 6.27413 0.553544C6.08135 0.623909 5.90549 0.733945 5.75791 0.876539C5.61032 1.01913 5.49431 1.19111 5.41735 1.38135C5.35785 1.52857 5.25082 1.65167 5.1133 1.73106C4.97578 1.81045 4.81565 1.84158 4.6584 1.81949C4.24769 1.76202 3.83022 1.88136 3.51307 2.14761C3.35602 2.27967 3.22842 2.4432 3.13852 2.62765C3.04862 2.8121 2.99842 3.01336 2.99116 3.21842C2.98555 3.37713 2.92706 3.52942 2.82497 3.65108C2.72288 3.77273 2.58306 3.85678 2.42773 3.88985C2.22705 3.93258 2.03758 4.01695 1.87155 4.1375C1.70552 4.25805 1.56664 4.4121 1.46389 4.58969C1.36146 4.76748 1.29747 4.96478 1.27606 5.16884C1.25465 5.3729 1.27629 5.57918 1.33958 5.77436C1.38862 5.92543 1.38576 6.08857 1.33145 6.23783C1.27715 6.3871 1.17452 6.51393 1.03986 6.59818C0.865939 6.707 0.716774 6.8511 0.602 7.02115C0.487227 7.19121 0.409398 7.38345 0.373539 7.58546C0.338161 7.7876 0.345563 7.99491 0.395266 8.19402C0.444969 8.39312 0.53587 8.57959 0.6621 8.74139C0.75982 8.86655 0.812899 9.02078 0.812899 9.17957C0.812899 9.33836 0.75982 9.4926 0.6621 9.61776C0.535872 9.77952 0.444972 9.96596 0.395268 10.165C0.345564 10.3641 0.338162 10.5714 0.373539 10.7735C0.409387 10.9755 0.487206 11.1678 0.60197 11.3379C0.716735 11.508 0.865893 11.6521 1.03982 11.761C1.17449 11.8451 1.27717 11.9719 1.33151 12.1211C1.38586 12.2704 1.38877 12.4335 1.33977 12.5846C1.27643 12.7797 1.25476 12.986 1.27614 13.1901C1.29752 13.3941 1.36148 13.5915 1.46389 13.7693C1.56669 13.9468 1.70559 14.1009 1.87162 14.2215C2.03764 14.342 2.2271 14.4265 2.42778 14.4693C2.58313 14.5023 2.72299 14.5863 2.82508 14.708C2.92718 14.8297 2.98566 14.982 2.99121 15.1407C2.99851 15.3458 3.04874 15.547 3.13865 15.7315C3.22856 15.9159 3.35616 16.0795 3.51321 16.2115C3.67054 16.3432 3.85374 16.4405 4.051 16.497C4.24825 16.5535 4.45516 16.5679 4.65836 16.5395C4.81562 16.5175 4.97573 16.5486 5.11324 16.6281C5.25075 16.7075 5.35778 16.8306 5.41731 16.9778C5.49431 17.168 5.61035 17.3399 5.75793 17.4825C5.90551 17.625 6.08134 17.7351 6.27408 17.8055C6.46698 17.8754 6.6724 17.9041 6.87708 17.8898C7.08176 17.8754 7.28116 17.8183 7.4624 17.7221C7.60263 17.6475 7.76377 17.622 7.92018 17.6496C8.07659 17.6771 8.21928 17.7562 8.32555 17.8743C8.46292 18.0267 8.63073 18.1485 8.81814 18.232C9.00556 18.3155 9.2084 18.3588 9.41356 18.359C9.82756 18.359 10.2242 18.1822 10.5018 17.8743C10.6081 17.7563 10.7508 17.6772 10.9072 17.6497C11.0635 17.6221 11.2247 17.6476 11.3649 17.7221C11.5461 17.8183 11.7456 17.8755 11.9503 17.8898C12.155 17.9042 12.3604 17.8755 12.5533 17.8055C12.746 17.7351 12.9218 17.625 13.0693 17.4825C13.2169 17.3399 13.3329 17.168 13.4098 16.9778C13.4694 16.8305 13.5764 16.7074 13.714 16.628C13.8515 16.5486 14.0117 16.5174 14.169 16.5395C14.3722 16.5679 14.5791 16.5534 14.7763 16.4969C14.9735 16.4404 15.1568 16.3432 15.3141 16.2115C15.4712 16.0795 15.5988 15.9159 15.6887 15.7315C15.7786 15.547 15.8288 15.3458 15.8362 15.1407C15.8417 14.982 15.9001 14.8297 16.0022 14.7081C16.1042 14.5864 16.244 14.5024 16.3994 14.4693C16.6 14.4265 16.7895 14.3421 16.9556 14.2215C17.1217 14.1009 17.2606 13.9469 17.3634 13.7693C17.4658 13.5915 17.5297 13.3941 17.5511 13.1901C17.5725 12.986 17.5508 12.7798 17.4875 12.5846C17.4385 12.4336 17.4414 12.2704 17.4957 12.1212C17.55 11.972 17.6527 11.8452 17.7873 11.761C17.9613 11.6522 18.1105 11.5081 18.2253 11.338C18.3401 11.168 18.4179 10.9757 18.4538 10.7737C18.4892 10.5715 18.4818 10.3642 18.4321 10.1651C18.3824 9.96602 18.2915 9.77955 18.1652 9.61776C18.0674 9.4926 18.0143 9.33834 18.0142 9.17951C18.0142 9.02068 18.0673 8.8664 18.165 8.7412ZM9.41356 15.4189C5.97324 15.4189 3.17407 12.6199 3.17407 9.17957C3.17407 5.73906 5.97324 2.94008 9.41356 2.94008C12.8539 2.94008 15.6529 5.73906 15.6529 9.17957C15.6529 12.6199 12.8539 15.4189 9.41356 15.4189Z" fill="url(#paint0_linear_1257_20487654)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1257_20487654" x1="9.41368" y1="0" x2="9.41368" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B0B0B0"/>
+                    <stop offset="1" stop-color="#737373"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>  
+                  </div>
+                </div> 
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                ENTERPRISE
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$13.99</span> /month
+              </div>
+              <div class="fs-14 mb-4">
+                or $11.66/month billed at $139.90 once per year
+              </div>
+              <button class="btn" type="button">
+                Active Subscription
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">Unlimited Review Requests</li>
+                <li>All features available from the Beginner plan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="Yearly" role="tabpanel" aria-labelledby="YearlyTab">
+        <div class="row list-yes g-3">
+          <div class="col-lg-3 col-sm-6">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.96875 9.53333C8.82055 11.2783 9.40208 19.0667 9.40208 19.0667C9.40208 19.0667 9.98362 11.2783 17.8354 9.53333C9.98362 7.78837 9.40208 0 9.40208 0C9.40208 0 8.82055 7.78837 0.96875 9.53333ZM12.7021 16.8667C13.9388 17.1051 15.0675 17.7311 15.9246 18.6541C16.7816 19.5771 17.3225 20.749 17.4688 22C17.615 20.749 18.1559 19.5771 19.0129 18.6541C19.87 17.7311 20.9987 17.1051 22.2354 16.8667C20.9987 16.6283 19.87 16.0022 19.0129 15.0792C18.1559 14.1563 17.615 12.9843 17.4688 11.7333C17.3225 12.9843 16.7816 14.1563 15.9246 15.0792C15.0675 16.0022 13.9388 16.6283 12.7021 16.8667Z" fill="url(#paint0_linear_1257_20469)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_1257_20469" x1="11.6021" y1="0" x2="11.6021" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#B0B0B0"/>
+                      <stop offset="1" stop-color="#737373"/>
+                      </linearGradient>
+                      </defs>
+                      </svg>
+                  </div>
+                </div>
+                <div class="current rounded-pill">
+                  <div class="current-badge d-block rounded-pill ps-10 pe-10 py-1 text-white fs-12">
+                    Current
+                  </div>
+                </div>
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                FREE
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$0</span> /year
+              </div>
+              <div class="fs-14 mb-4">
+                No billed generated all 
+time free
+              </div>
+              <button class="btn" type="button">
+                Active Plan
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">50 Review Requests/Month</li>
+                <li class="pb-10">Unlimited Import/Export product reviews</li>
+                <li class="pb-10">Unlimited Q&A</li>
+                <li>Limited Features available</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">                    
+                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.35818 0.6875C8.30568 0.689943 8.25446 0.704461 8.20849 0.729924C8.16252 0.755387 8.12305 0.79111 8.09313 0.834314L0.187268 12.1767C0.151144 12.2282 0.129863 12.2888 0.125739 12.3516C0.121615 12.4144 0.134807 12.4772 0.163879 12.5331C0.192951 12.5889 0.23679 12.6358 0.290623 12.6685C0.344457 12.7011 0.406224 12.7184 0.469202 12.7184H5.93899L5.28288 20.9426C5.25689 21.2895 5.70513 21.4493 5.90651 21.1661L13.8137 9.82374C13.8498 9.77215 13.8711 9.71165 13.8752 9.6488C13.8793 9.58596 13.8661 9.52319 13.8371 9.46732C13.808 9.41146 13.7642 9.36463 13.7103 9.33195C13.6565 9.29927 13.5947 9.28198 13.5317 9.28196H8.06195L8.71806 1.05778C8.72161 1.00919 8.71481 0.960405 8.69811 0.914641C8.6814 0.868877 8.65517 0.827179 8.62116 0.792302C8.58714 0.757426 8.54611 0.730166 8.50077 0.712324C8.45544 0.694482 8.40684 0.685164 8.35818 0.6875Z" fill="url(#paint0_linear_1257_20475)"/>
+                  <defs>
+                  <linearGradient id="paint0_linear_1257_20475" x1="7.00047" y1="0.6875" x2="7.00047" y2="21.3117" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#B0B0B0"/>
+                  <stop offset="1" stop-color="#737373"/>
+                  </linearGradient>
+                  </defs>
+                  </svg>  
+                  </div>
+                </div> 
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                BEGINNER
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$49.90</span> /year
+              </div>
+              <div class="fs-14 mb-4">
+                or $4.16/month billed at $49.90 once per year
+              </div>
+              <button class="btn" type="button">
+                Active Subscription
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">1000 Review Requests/Month</li>
+                <li class="pb-10">Google Shopping (Product rating feed)</li>
+                <li class="pb-10">Social Push (Facebook)</li>
+                <li class="pb-10">Email branding</li>
+                <li>Site Reviews</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 recommend">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.2321 2.83462H18.5109V2.73862C18.5109 2.37489 18.3664 2.02606 18.1093 1.76887C17.8521 1.51168 17.5032 1.36719 17.1395 1.36719H6.85379C6.09951 1.36719 5.48237 1.98433 5.48237 2.73862V2.83462H3.76808C2.62979 2.83462 1.71094 3.76033 1.71094 4.89176V5.58433C1.71094 7.81976 3.37037 9.67804 5.53037 9.98662C5.67091 11.2388 6.17215 12.4231 6.97314 13.3958C7.77414 14.3684 8.84041 15.0874 10.0424 15.4655L9.16465 17.742H14.8355L13.9578 15.4655C15.1598 15.0876 16.2262 14.3686 17.0272 13.3959C17.8282 12.4233 18.3294 11.2388 18.4698 9.98662C20.6229 9.67804 22.2892 7.81976 22.2892 5.58433V4.89176C22.2892 3.76033 21.3635 2.83462 20.2321 2.83462ZM5.48237 8.58776C4.11094 8.27233 3.08237 7.05176 3.08237 5.58433V4.89176C3.08237 4.51462 3.39094 4.20604 3.76808 4.20604H5.48237V8.58776ZM15.1509 8.31347L14.0812 9.36262L14.3281 10.8369C14.4241 11.406 13.8344 11.838 13.3201 11.5706L11.9967 10.8712L10.6664 11.5706C10.1658 11.838 9.56922 11.406 9.66522 10.8369L9.91894 9.36262L8.84922 8.31347C8.43094 7.9089 8.66408 7.20947 9.22637 7.12719L10.7144 6.91462L11.3795 5.57062C11.4368 5.45499 11.5253 5.35766 11.6349 5.28962C11.7446 5.22158 11.871 5.18553 12.0001 5.18553C12.1291 5.18553 12.2556 5.22158 12.3653 5.28962C12.4749 5.35766 12.5634 5.45499 12.6207 5.57062L13.2858 6.91462L14.7669 7.13404C15.3361 7.21633 15.5624 7.91576 15.1509 8.31347ZM20.9178 5.58433C20.9178 7.0449 19.8892 8.27233 18.5109 8.58776V4.20604H20.2321C20.6092 4.20604 20.9178 4.51462 20.9178 4.89176V5.58433ZM18.7653 21.2556H17.5105V21.2392C17.5105 20.96 17.4555 20.6836 17.3487 20.4257C17.2418 20.1678 17.0853 19.9335 16.8879 19.7361C16.6905 19.5387 16.4561 19.3821 16.1982 19.2753C15.9403 19.1685 15.6639 19.1135 15.3848 19.1135H8.61265C8.04888 19.1135 7.50819 19.3374 7.10954 19.7361C6.7109 20.1347 6.48694 20.6754 6.48694 21.2392V21.2556H5.23208C5.14203 21.2556 5.05286 21.2734 4.96967 21.3078C4.88647 21.3423 4.81088 21.3928 4.74721 21.4565C4.68353 21.5202 4.63302 21.5958 4.59856 21.6789C4.5641 21.7621 4.54637 21.8513 4.54637 21.9414C4.54637 22.0314 4.5641 22.1206 4.59856 22.2038C4.63302 22.287 4.68353 22.3626 4.74721 22.4262C4.81088 22.4899 4.88647 22.5404 4.96967 22.5749C5.05286 22.6093 5.14203 22.6271 5.23208 22.6271H18.766C18.9479 22.6271 19.1223 22.5548 19.2509 22.4262C19.3795 22.2976 19.4517 22.1232 19.4517 21.9414C19.4517 21.7595 19.3795 21.5851 19.2509 21.4565C19.1223 21.3279 18.9479 21.2556 18.766 21.2556H18.7653Z" fill="url(#paint0_linear_1257_20479)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1257_20479" x1="12.0001" y1="1.36719" x2="12.0001" y2="22.6271" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white"/>
+                    <stop offset="1" stop-color="#A3D5EC"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>  
+                  </div>
+                </div>
+                <div class="recommend-badge rounded-pill">
+                  <div class=" d-block rounded-pill ps-10 pe-10 py-1 text-white fs-12">
+                    Recommend
+                  </div>
+                </div>
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                ADVANCED
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$89.90</span> /year
+              </div>
+              <div class="fs-14 mb-4">
+                or $7.49/month billed at $89.90 once per year
+              </div>
+              <button class="btn btn-primary" type="button">
+                Active Subscription
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">2500 Review Requests/Month</li>
+                <li>All features available from the Beginner plan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="card h-100">
+              <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                <div class="plan-icon-container">
+                  <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                  <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.6499 19.1816C7.04169 19.3748 6.38668 19.3615 5.78682 19.1437C5.18387 18.9242 4.67462 18.5102 4.33534 17.9754C3.70235 17.949 3.08913 17.7148 2.5977 17.3024C2.5358 17.2506 2.47616 17.1961 2.41896 17.1391L0.851239 20.42C0.793571 20.5407 0.771065 20.6752 0.786299 20.8081C0.801533 20.941 0.85389 21.0669 0.937374 21.1714C1.02086 21.276 1.13209 21.3549 1.25834 21.3991C1.38459 21.4433 1.52074 21.4511 1.6512 21.4216L4.79368 20.7089L6.21329 23.6016C6.27196 23.7211 6.36294 23.8217 6.47592 23.8922C6.58889 23.9626 6.71934 23.9999 6.85247 24H6.85631C6.99008 23.9993 7.12094 23.9609 7.2339 23.8892C7.34686 23.8176 7.43734 23.7155 7.49498 23.5948L9.31747 19.7811C8.71259 19.7606 8.12937 19.551 7.6499 19.1816ZM16.2294 17.3024C15.738 17.7148 15.1246 17.9488 14.4918 17.9752C14.1525 18.5102 13.6431 18.9242 13.0401 19.1435C12.4373 19.3631 11.7809 19.3734 11.1772 19.1817C10.6978 19.551 10.1146 19.7606 9.50975 19.7811L11.332 23.5949C11.3897 23.7156 11.4802 23.8175 11.5932 23.8892C11.7062 23.9608 11.8371 23.9992 11.9709 23.9999H11.9745C12.1076 23.9999 12.2381 23.9626 12.3511 23.8922C12.4641 23.8218 12.5551 23.7211 12.6137 23.6016L14.0335 20.7089L17.176 21.4214C17.3064 21.4511 17.4426 21.4434 17.5688 21.3991C17.6951 21.3549 17.8063 21.276 17.8897 21.1714C17.9732 21.0669 18.0256 20.941 18.0408 20.8081C18.0561 20.6752 18.0336 20.5407 17.9759 20.42L16.408 17.1391C16.3508 17.1961 16.2912 17.2506 16.2294 17.3024ZM18.165 8.7412C18.2913 8.57944 18.3822 8.393 18.4319 8.19393C18.4816 7.99486 18.489 7.78757 18.4536 7.58546C18.4178 7.38343 18.3399 7.19117 18.2252 7.02109C18.1104 6.85101 17.9612 6.70687 17.7873 6.59799C17.6526 6.51383 17.55 6.38705 17.4956 6.23781C17.4413 6.08857 17.4385 5.92545 17.4875 5.7744C17.5508 5.57922 17.5725 5.37293 17.5511 5.16886C17.5297 4.96479 17.4657 4.76748 17.3632 4.58969C17.2605 4.41209 17.1216 4.25803 16.9555 4.13745C16.7895 4.01687 16.6 3.93246 16.3994 3.88967C16.244 3.85663 16.1042 3.77262 16.0021 3.65099C15.9 3.52937 15.8415 3.37711 15.8359 3.21842C15.8286 3.01337 15.7784 2.81213 15.6885 2.62769C15.5987 2.44325 15.4711 2.2797 15.3141 2.14761C14.997 1.88136 14.5797 1.76202 14.1688 1.81949C13.8454 1.8651 13.5323 1.68421 13.4098 1.38135C13.3329 1.19111 13.2169 1.01914 13.0693 0.876547C12.9217 0.733953 12.7459 0.623915 12.5531 0.553544C12.3602 0.483568 12.1548 0.454838 11.9502 0.46921C11.7455 0.483582 11.5461 0.540737 11.3649 0.636981C11.2246 0.711461 11.0635 0.736923 10.907 0.709321C10.7506 0.681719 10.6079 0.602637 10.5016 0.484638C10.2242 0.176718 9.82756 0 9.41366 0C8.99975 0 8.60301 0.176718 8.3256 0.484685C8.21927 0.602683 8.07656 0.681766 7.92014 0.709368C7.76372 0.736969 7.60256 0.711508 7.46226 0.637028C7.28108 0.540783 7.08171 0.483624 6.87705 0.469243C6.67239 0.454863 6.46699 0.483582 6.27413 0.553544C6.08135 0.623909 5.90549 0.733945 5.75791 0.876539C5.61032 1.01913 5.49431 1.19111 5.41735 1.38135C5.35785 1.52857 5.25082 1.65167 5.1133 1.73106C4.97578 1.81045 4.81565 1.84158 4.6584 1.81949C4.24769 1.76202 3.83022 1.88136 3.51307 2.14761C3.35602 2.27967 3.22842 2.4432 3.13852 2.62765C3.04862 2.8121 2.99842 3.01336 2.99116 3.21842C2.98555 3.37713 2.92706 3.52942 2.82497 3.65108C2.72288 3.77273 2.58306 3.85678 2.42773 3.88985C2.22705 3.93258 2.03758 4.01695 1.87155 4.1375C1.70552 4.25805 1.56664 4.4121 1.46389 4.58969C1.36146 4.76748 1.29747 4.96478 1.27606 5.16884C1.25465 5.3729 1.27629 5.57918 1.33958 5.77436C1.38862 5.92543 1.38576 6.08857 1.33145 6.23783C1.27715 6.3871 1.17452 6.51393 1.03986 6.59818C0.865939 6.707 0.716774 6.8511 0.602 7.02115C0.487227 7.19121 0.409398 7.38345 0.373539 7.58546C0.338161 7.7876 0.345563 7.99491 0.395266 8.19402C0.444969 8.39312 0.53587 8.57959 0.6621 8.74139C0.75982 8.86655 0.812899 9.02078 0.812899 9.17957C0.812899 9.33836 0.75982 9.4926 0.6621 9.61776C0.535872 9.77952 0.444972 9.96596 0.395268 10.165C0.345564 10.3641 0.338162 10.5714 0.373539 10.7735C0.409387 10.9755 0.487206 11.1678 0.60197 11.3379C0.716735 11.508 0.865893 11.6521 1.03982 11.761C1.17449 11.8451 1.27717 11.9719 1.33151 12.1211C1.38586 12.2704 1.38877 12.4335 1.33977 12.5846C1.27643 12.7797 1.25476 12.986 1.27614 13.1901C1.29752 13.3941 1.36148 13.5915 1.46389 13.7693C1.56669 13.9468 1.70559 14.1009 1.87162 14.2215C2.03764 14.342 2.2271 14.4265 2.42778 14.4693C2.58313 14.5023 2.72299 14.5863 2.82508 14.708C2.92718 14.8297 2.98566 14.982 2.99121 15.1407C2.99851 15.3458 3.04874 15.547 3.13865 15.7315C3.22856 15.9159 3.35616 16.0795 3.51321 16.2115C3.67054 16.3432 3.85374 16.4405 4.051 16.497C4.24825 16.5535 4.45516 16.5679 4.65836 16.5395C4.81562 16.5175 4.97573 16.5486 5.11324 16.6281C5.25075 16.7075 5.35778 16.8306 5.41731 16.9778C5.49431 17.168 5.61035 17.3399 5.75793 17.4825C5.90551 17.625 6.08134 17.7351 6.27408 17.8055C6.46698 17.8754 6.6724 17.9041 6.87708 17.8898C7.08176 17.8754 7.28116 17.8183 7.4624 17.7221C7.60263 17.6475 7.76377 17.622 7.92018 17.6496C8.07659 17.6771 8.21928 17.7562 8.32555 17.8743C8.46292 18.0267 8.63073 18.1485 8.81814 18.232C9.00556 18.3155 9.2084 18.3588 9.41356 18.359C9.82756 18.359 10.2242 18.1822 10.5018 17.8743C10.6081 17.7563 10.7508 17.6772 10.9072 17.6497C11.0635 17.6221 11.2247 17.6476 11.3649 17.7221C11.5461 17.8183 11.7456 17.8755 11.9503 17.8898C12.155 17.9042 12.3604 17.8755 12.5533 17.8055C12.746 17.7351 12.9218 17.625 13.0693 17.4825C13.2169 17.3399 13.3329 17.168 13.4098 16.9778C13.4694 16.8305 13.5764 16.7074 13.714 16.628C13.8515 16.5486 14.0117 16.5174 14.169 16.5395C14.3722 16.5679 14.5791 16.5534 14.7763 16.4969C14.9735 16.4404 15.1568 16.3432 15.3141 16.2115C15.4712 16.0795 15.5988 15.9159 15.6887 15.7315C15.7786 15.547 15.8288 15.3458 15.8362 15.1407C15.8417 14.982 15.9001 14.8297 16.0022 14.7081C16.1042 14.5864 16.244 14.5024 16.3994 14.4693C16.6 14.4265 16.7895 14.3421 16.9556 14.2215C17.1217 14.1009 17.2606 13.9469 17.3634 13.7693C17.4658 13.5915 17.5297 13.3941 17.5511 13.1901C17.5725 12.986 17.5508 12.7798 17.4875 12.5846C17.4385 12.4336 17.4414 12.2704 17.4957 12.1212C17.55 11.972 17.6527 11.8452 17.7873 11.761C17.9613 11.6522 18.1105 11.5081 18.2253 11.338C18.3401 11.168 18.4179 10.9757 18.4538 10.7737C18.4892 10.5715 18.4818 10.3642 18.4321 10.1651C18.3824 9.96602 18.2915 9.77955 18.1652 9.61776C18.0674 9.4926 18.0143 9.33834 18.0142 9.17951C18.0142 9.02068 18.0673 8.8664 18.165 8.7412ZM9.41356 15.4189C5.97324 15.4189 3.17407 12.6199 3.17407 9.17957C3.17407 5.73906 5.97324 2.94008 9.41356 2.94008C12.8539 2.94008 15.6529 5.73906 15.6529 9.17957C15.6529 12.6199 12.8539 15.4189 9.41356 15.4189Z" fill="url(#paint0_linear_1257_20487)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_1257_20487" x1="9.41368" y1="0" x2="9.41368" y2="24" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B0B0B0"/>
+                    <stop offset="1" stop-color="#737373"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>  
+                  </div>
+                </div> 
+              </div>
+              <div class="text-616 fs-12 mb-1">
+                ENTERPRISE
+              </div>
+              <div class="text-616 fs-12 pb-10">
+               <span class="fs-24 text-303030 fw-medium">$139.90</span> /year
+              </div>
+              <div class="fs-14 mb-4">
+                or $11.66/month billed at $139.90 once per year
+              </div>
+              <button class="btn" type="button">
+                Active Subscription
+              </button>
+              <ul class="fs-14 mt-3 pt-1 list-unstyled">
+                <li class="pb-10">Unlimited Review Requests</li>
+                <li>All features available from the Beginner plan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="accordion mt-1" id="showComparison">
+        <div class="accordion-item d-flex justify-content-center bg-transparent border-0">
+          <h2 class="accordion-header d-flex justify-content-center">
+            <button class="accordion-button btn bg-white shadow-none fs-13 text-303030 dropdown-after-none position-relative collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Show Comparison
+            </button>
+          </h2>
+        </div>
+      </div>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#showComparison">
+        <div class="accordion-body mt-4 pt-1">
+          <div class="table-responsive-md compare-plan-table">
+            <table class="table mb-0">
+              <thead>
+                <tr class="position-sticky top-0 align-top">
+                  <td width="28%">
+                    &nbsp;
+                  </td>
+                  <td width="18%">
+                    <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                      <div class="plan-icon-container">
+                        <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.96875 9.53333C8.82055 11.2783 9.40208 19.0667 9.40208 19.0667C9.40208 19.0667 9.98362 11.2783 17.8354 9.53333C9.98362 7.78837 9.40208 0 9.40208 0C9.40208 0 8.82055 7.78837 0.96875 9.53333ZM12.7021 16.8667C13.9388 17.1051 15.0675 17.7311 15.9246 18.6541C16.7816 19.5771 17.3225 20.749 17.4688 22C17.615 20.749 18.1559 19.5771 19.0129 18.6541C19.87 17.7311 20.9987 17.1051 22.2354 16.8667C20.9987 16.6283 19.87 16.0022 19.0129 15.0792C18.1559 14.1563 17.615 12.9843 17.4688 11.7333C17.3225 12.9843 16.7816 14.1563 15.9246 15.0792C15.0675 16.0022 13.9388 16.6283 12.7021 16.8667Z" fill="url(#paint0_linear_1257_20469684)"></path>
+                            <defs>
+                            <linearGradient id="paint0_linear_1257_20469684" x1="11.6021" y1="0" x2="11.6021" y2="22" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#B0B0B0"></stop>
+                            <stop offset="1" stop-color="#737373"></stop>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="text-616 fs-12 mb-1">
+                      FREE
+                    </div>
+                    <div class="text-616 fs-12 pb-10">
+                     <span class="fs-24 text-303030 fw-medium">$0</span> /month
+                    </div> 
+                    <button class="btn px-2 text-nowrap" type="button">
+                      Active Plan
+                    </button> 
+                  </td>
+                  <td width="18%">
+                    <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                      <div class="plan-icon-container">
+                        <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">                    
+                      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.35818 0.6875C8.30568 0.689943 8.25446 0.704461 8.20849 0.729924C8.16252 0.755387 8.12305 0.79111 8.09313 0.834314L0.187268 12.1767C0.151144 12.2282 0.129863 12.2888 0.125739 12.3516C0.121615 12.4144 0.134807 12.4772 0.163879 12.5331C0.192951 12.5889 0.23679 12.6358 0.290623 12.6685C0.344457 12.7011 0.406224 12.7184 0.469202 12.7184H5.93899L5.28288 20.9426C5.25689 21.2895 5.70513 21.4493 5.90651 21.1661L13.8137 9.82374C13.8498 9.77215 13.8711 9.71165 13.8752 9.6488C13.8793 9.58596 13.8661 9.52319 13.8371 9.46732C13.808 9.41146 13.7642 9.36463 13.7103 9.33195C13.6565 9.29927 13.5947 9.28198 13.5317 9.28196H8.06195L8.71806 1.05778C8.72161 1.00919 8.71481 0.960405 8.69811 0.914641C8.6814 0.868877 8.65517 0.827179 8.62116 0.792302C8.58714 0.757426 8.54611 0.730166 8.50077 0.712324C8.45544 0.694482 8.40684 0.685164 8.35818 0.6875Z" fill="url(#paint0_linear_1257_2047564894)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_1257_2047564894" x1="7.00047" y1="0.6875" x2="7.00047" y2="21.3117" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B0B0B0"/>
+                        <stop offset="1" stop-color="#737373"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>  
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="text-616 fs-12 mb-1">
+                      BEGINNER
+                    </div>
+                    <div class="text-616 fs-12 pb-10">
+                     <span class="fs-24 text-303030 fw-medium">$4.99</span> /month
+                    </div> 
+                    <button class="btn px-2 text-nowrap" type="button">
+                      Active Subscription
+                    </button>
+                  </td>
+                  <td width="18%"> 
+                      <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                        <div class="plan-icon-container">
+                          <div class="plan-icon recommend-badge-plan rounded-3 d-flex align-items-center justify-content-center">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.2321 2.83462H18.5109V2.73862C18.5109 2.37489 18.3664 2.02606 18.1093 1.76887C17.8521 1.51168 17.5032 1.36719 17.1395 1.36719H6.85379C6.09951 1.36719 5.48237 1.98433 5.48237 2.73862V2.83462H3.76808C2.62979 2.83462 1.71094 3.76033 1.71094 4.89176V5.58433C1.71094 7.81976 3.37037 9.67804 5.53037 9.98662C5.67091 11.2388 6.17215 12.4231 6.97314 13.3958C7.77414 14.3684 8.84041 15.0874 10.0424 15.4655L9.16465 17.742H14.8355L13.9578 15.4655C15.1598 15.0876 16.2262 14.3686 17.0272 13.3959C17.8282 12.4233 18.3294 11.2388 18.4698 9.98662C20.6229 9.67804 22.2892 7.81976 22.2892 5.58433V4.89176C22.2892 3.76033 21.3635 2.83462 20.2321 2.83462ZM5.48237 8.58776C4.11094 8.27233 3.08237 7.05176 3.08237 5.58433V4.89176C3.08237 4.51462 3.39094 4.20604 3.76808 4.20604H5.48237V8.58776ZM15.1509 8.31347L14.0812 9.36262L14.3281 10.8369C14.4241 11.406 13.8344 11.838 13.3201 11.5706L11.9967 10.8712L10.6664 11.5706C10.1658 11.838 9.56922 11.406 9.66522 10.8369L9.91894 9.36262L8.84922 8.31347C8.43094 7.9089 8.66408 7.20947 9.22637 7.12719L10.7144 6.91462L11.3795 5.57062C11.4368 5.45499 11.5253 5.35766 11.6349 5.28962C11.7446 5.22158 11.871 5.18553 12.0001 5.18553C12.1291 5.18553 12.2556 5.22158 12.3653 5.28962C12.4749 5.35766 12.5634 5.45499 12.6207 5.57062L13.2858 6.91462L14.7669 7.13404C15.3361 7.21633 15.5624 7.91576 15.1509 8.31347ZM20.9178 5.58433C20.9178 7.0449 19.8892 8.27233 18.5109 8.58776V4.20604H20.2321C20.6092 4.20604 20.9178 4.51462 20.9178 4.89176V5.58433ZM18.7653 21.2556H17.5105V21.2392C17.5105 20.96 17.4555 20.6836 17.3487 20.4257C17.2418 20.1678 17.0853 19.9335 16.8879 19.7361C16.6905 19.5387 16.4561 19.3821 16.1982 19.2753C15.9403 19.1685 15.6639 19.1135 15.3848 19.1135H8.61265C8.04888 19.1135 7.50819 19.3374 7.10954 19.7361C6.7109 20.1347 6.48694 20.6754 6.48694 21.2392V21.2556H5.23208C5.14203 21.2556 5.05286 21.2734 4.96967 21.3078C4.88647 21.3423 4.81088 21.3928 4.74721 21.4565C4.68353 21.5202 4.63302 21.5958 4.59856 21.6789C4.5641 21.7621 4.54637 21.8513 4.54637 21.9414C4.54637 22.0314 4.5641 22.1206 4.59856 22.2038C4.63302 22.287 4.68353 22.3626 4.74721 22.4262C4.81088 22.4899 4.88647 22.5404 4.96967 22.5749C5.05286 22.6093 5.14203 22.6271 5.23208 22.6271H18.766C18.9479 22.6271 19.1223 22.5548 19.2509 22.4262C19.3795 22.2976 19.4517 22.1232 19.4517 21.9414C19.4517 21.7595 19.3795 21.5851 19.2509 21.4565C19.1223 21.3279 18.9479 21.2556 18.766 21.2556H18.7653Z" fill="url(#paint0_linear_1257_204796854)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_1257_204796854" x1="12.0001" y1="1.36719" x2="12.0001" y2="22.6271" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white"/>
+                            <stop offset="1" stop-color="#A3D5EC"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>  
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="text-616 fs-12 mb-1">
+                        ADVANCED 
+                      </div>
+                      <div class="text-616 fs-12 pb-10">
+                       <span class="fs-24 text-303030 fw-medium">$8.99</span> /month
+                      </div> 
+                      <button class="btn btn-primary px-2 text-nowrap" type="button">
+                        Active Subscription
+                      </button> 
+                  </td>
+                  <td width="18%"> 
+                      <div class="d-flex align-items-center justify-content-between mb-2 pb-1">
+                        <div class="plan-icon-container">
+                          <div class="plan-icon rounded-3 d-flex align-items-center justify-content-center">
+                          <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.6499 19.1816C7.04169 19.3748 6.38668 19.3615 5.78682 19.1437C5.18387 18.9242 4.67462 18.5102 4.33534 17.9754C3.70235 17.949 3.08913 17.7148 2.5977 17.3024C2.5358 17.2506 2.47616 17.1961 2.41896 17.1391L0.851239 20.42C0.793571 20.5407 0.771065 20.6752 0.786299 20.8081C0.801533 20.941 0.85389 21.0669 0.937374 21.1714C1.02086 21.276 1.13209 21.3549 1.25834 21.3991C1.38459 21.4433 1.52074 21.4511 1.6512 21.4216L4.79368 20.7089L6.21329 23.6016C6.27196 23.7211 6.36294 23.8217 6.47592 23.8922C6.58889 23.9626 6.71934 23.9999 6.85247 24H6.85631C6.99008 23.9993 7.12094 23.9609 7.2339 23.8892C7.34686 23.8176 7.43734 23.7155 7.49498 23.5948L9.31747 19.7811C8.71259 19.7606 8.12937 19.551 7.6499 19.1816ZM16.2294 17.3024C15.738 17.7148 15.1246 17.9488 14.4918 17.9752C14.1525 18.5102 13.6431 18.9242 13.0401 19.1435C12.4373 19.3631 11.7809 19.3734 11.1772 19.1817C10.6978 19.551 10.1146 19.7606 9.50975 19.7811L11.332 23.5949C11.3897 23.7156 11.4802 23.8175 11.5932 23.8892C11.7062 23.9608 11.8371 23.9992 11.9709 23.9999H11.9745C12.1076 23.9999 12.2381 23.9626 12.3511 23.8922C12.4641 23.8218 12.5551 23.7211 12.6137 23.6016L14.0335 20.7089L17.176 21.4214C17.3064 21.4511 17.4426 21.4434 17.5688 21.3991C17.6951 21.3549 17.8063 21.276 17.8897 21.1714C17.9732 21.0669 18.0256 20.941 18.0408 20.8081C18.0561 20.6752 18.0336 20.5407 17.9759 20.42L16.408 17.1391C16.3508 17.1961 16.2912 17.2506 16.2294 17.3024ZM18.165 8.7412C18.2913 8.57944 18.3822 8.393 18.4319 8.19393C18.4816 7.99486 18.489 7.78757 18.4536 7.58546C18.4178 7.38343 18.3399 7.19117 18.2252 7.02109C18.1104 6.85101 17.9612 6.70687 17.7873 6.59799C17.6526 6.51383 17.55 6.38705 17.4956 6.23781C17.4413 6.08857 17.4385 5.92545 17.4875 5.7744C17.5508 5.57922 17.5725 5.37293 17.5511 5.16886C17.5297 4.96479 17.4657 4.76748 17.3632 4.58969C17.2605 4.41209 17.1216 4.25803 16.9555 4.13745C16.7895 4.01687 16.6 3.93246 16.3994 3.88967C16.244 3.85663 16.1042 3.77262 16.0021 3.65099C15.9 3.52937 15.8415 3.37711 15.8359 3.21842C15.8286 3.01337 15.7784 2.81213 15.6885 2.62769C15.5987 2.44325 15.4711 2.2797 15.3141 2.14761C14.997 1.88136 14.5797 1.76202 14.1688 1.81949C13.8454 1.8651 13.5323 1.68421 13.4098 1.38135C13.3329 1.19111 13.2169 1.01914 13.0693 0.876547C12.9217 0.733953 12.7459 0.623915 12.5531 0.553544C12.3602 0.483568 12.1548 0.454838 11.9502 0.46921C11.7455 0.483582 11.5461 0.540737 11.3649 0.636981C11.2246 0.711461 11.0635 0.736923 10.907 0.709321C10.7506 0.681719 10.6079 0.602637 10.5016 0.484638C10.2242 0.176718 9.82756 0 9.41366 0C8.99975 0 8.60301 0.176718 8.3256 0.484685C8.21927 0.602683 8.07656 0.681766 7.92014 0.709368C7.76372 0.736969 7.60256 0.711508 7.46226 0.637028C7.28108 0.540783 7.08171 0.483624 6.87705 0.469243C6.67239 0.454863 6.46699 0.483582 6.27413 0.553544C6.08135 0.623909 5.90549 0.733945 5.75791 0.876539C5.61032 1.01913 5.49431 1.19111 5.41735 1.38135C5.35785 1.52857 5.25082 1.65167 5.1133 1.73106C4.97578 1.81045 4.81565 1.84158 4.6584 1.81949C4.24769 1.76202 3.83022 1.88136 3.51307 2.14761C3.35602 2.27967 3.22842 2.4432 3.13852 2.62765C3.04862 2.8121 2.99842 3.01336 2.99116 3.21842C2.98555 3.37713 2.92706 3.52942 2.82497 3.65108C2.72288 3.77273 2.58306 3.85678 2.42773 3.88985C2.22705 3.93258 2.03758 4.01695 1.87155 4.1375C1.70552 4.25805 1.56664 4.4121 1.46389 4.58969C1.36146 4.76748 1.29747 4.96478 1.27606 5.16884C1.25465 5.3729 1.27629 5.57918 1.33958 5.77436C1.38862 5.92543 1.38576 6.08857 1.33145 6.23783C1.27715 6.3871 1.17452 6.51393 1.03986 6.59818C0.865939 6.707 0.716774 6.8511 0.602 7.02115C0.487227 7.19121 0.409398 7.38345 0.373539 7.58546C0.338161 7.7876 0.345563 7.99491 0.395266 8.19402C0.444969 8.39312 0.53587 8.57959 0.6621 8.74139C0.75982 8.86655 0.812899 9.02078 0.812899 9.17957C0.812899 9.33836 0.75982 9.4926 0.6621 9.61776C0.535872 9.77952 0.444972 9.96596 0.395268 10.165C0.345564 10.3641 0.338162 10.5714 0.373539 10.7735C0.409387 10.9755 0.487206 11.1678 0.60197 11.3379C0.716735 11.508 0.865893 11.6521 1.03982 11.761C1.17449 11.8451 1.27717 11.9719 1.33151 12.1211C1.38586 12.2704 1.38877 12.4335 1.33977 12.5846C1.27643 12.7797 1.25476 12.986 1.27614 13.1901C1.29752 13.3941 1.36148 13.5915 1.46389 13.7693C1.56669 13.9468 1.70559 14.1009 1.87162 14.2215C2.03764 14.342 2.2271 14.4265 2.42778 14.4693C2.58313 14.5023 2.72299 14.5863 2.82508 14.708C2.92718 14.8297 2.98566 14.982 2.99121 15.1407C2.99851 15.3458 3.04874 15.547 3.13865 15.7315C3.22856 15.9159 3.35616 16.0795 3.51321 16.2115C3.67054 16.3432 3.85374 16.4405 4.051 16.497C4.24825 16.5535 4.45516 16.5679 4.65836 16.5395C4.81562 16.5175 4.97573 16.5486 5.11324 16.6281C5.25075 16.7075 5.35778 16.8306 5.41731 16.9778C5.49431 17.168 5.61035 17.3399 5.75793 17.4825C5.90551 17.625 6.08134 17.7351 6.27408 17.8055C6.46698 17.8754 6.6724 17.9041 6.87708 17.8898C7.08176 17.8754 7.28116 17.8183 7.4624 17.7221C7.60263 17.6475 7.76377 17.622 7.92018 17.6496C8.07659 17.6771 8.21928 17.7562 8.32555 17.8743C8.46292 18.0267 8.63073 18.1485 8.81814 18.232C9.00556 18.3155 9.2084 18.3588 9.41356 18.359C9.82756 18.359 10.2242 18.1822 10.5018 17.8743C10.6081 17.7563 10.7508 17.6772 10.9072 17.6497C11.0635 17.6221 11.2247 17.6476 11.3649 17.7221C11.5461 17.8183 11.7456 17.8755 11.9503 17.8898C12.155 17.9042 12.3604 17.8755 12.5533 17.8055C12.746 17.7351 12.9218 17.625 13.0693 17.4825C13.2169 17.3399 13.3329 17.168 13.4098 16.9778C13.4694 16.8305 13.5764 16.7074 13.714 16.628C13.8515 16.5486 14.0117 16.5174 14.169 16.5395C14.3722 16.5679 14.5791 16.5534 14.7763 16.4969C14.9735 16.4404 15.1568 16.3432 15.3141 16.2115C15.4712 16.0795 15.5988 15.9159 15.6887 15.7315C15.7786 15.547 15.8288 15.3458 15.8362 15.1407C15.8417 14.982 15.9001 14.8297 16.0022 14.7081C16.1042 14.5864 16.244 14.5024 16.3994 14.4693C16.6 14.4265 16.7895 14.3421 16.9556 14.2215C17.1217 14.1009 17.2606 13.9469 17.3634 13.7693C17.4658 13.5915 17.5297 13.3941 17.5511 13.1901C17.5725 12.986 17.5508 12.7798 17.4875 12.5846C17.4385 12.4336 17.4414 12.2704 17.4957 12.1212C17.55 11.972 17.6527 11.8452 17.7873 11.761C17.9613 11.6522 18.1105 11.5081 18.2253 11.338C18.3401 11.168 18.4179 10.9757 18.4538 10.7737C18.4892 10.5715 18.4818 10.3642 18.4321 10.1651C18.3824 9.96602 18.2915 9.77955 18.1652 9.61776C18.0674 9.4926 18.0143 9.33834 18.0142 9.17951C18.0142 9.02068 18.0673 8.8664 18.165 8.7412ZM9.41356 15.4189C5.97324 15.4189 3.17407 12.6199 3.17407 9.17957C3.17407 5.73906 5.97324 2.94008 9.41356 2.94008C12.8539 2.94008 15.6529 5.73906 15.6529 9.17957C15.6529 12.6199 12.8539 15.4189 9.41356 15.4189Z" fill="url(#paint0_linear_1257_204876944)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_1257_204876944" x1="9.41368" y1="0" x2="9.41368" y2="24" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#B0B0B0"/>
+                            <stop offset="1" stop-color="#737373"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>  
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="text-616 fs-12 mb-1">
+                        ENTERPRISE
+                      </div>
+                      <div class="text-616 fs-12 pb-10">
+                       <span class="fs-24 text-303030 fw-medium">$13.99</span> /month
+                      </div> 
+                      <button class="btn px-2 text-nowrap" type="button">
+                        Active Subscription
+                      </button> 
+                  </td>
+                </tr>
+              </thead>
+              <tr>
+                <td colspan="5" class="bg-transparent"></td>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>
+                    Automated Review Requests & Reminder emails
+                  </td>
+                  <td>
+                    Up to 50/month
+                  </td>
+                  <td>
+                    1000
+                  </td>
+                  <td>
+                    2500
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Autopublish Reviews
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr> 
+                <tr>
+                  <td>
+                    Photo & Video Reviews
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr> 
+                <tr>
+                  <td>
+                    Custom Forms
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr> 
+                <tr>
+                  <td>
+                    Question – Answer
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                </tr> 
+                <tr>
+                  <td>
+                    Site Reviews
+                  </td>
+                  <td>
+                    <div class="compare-table-close-sign">                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#F11F1B" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Product Rating feed Google Shopping
+                  </td>
+                  <td>
+                    <div class="compare-table-close-sign">                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#F11F1B" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Import Reviews
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                  <td>
+                    Unlimited
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Social Post (Facebook)
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-close-sign">                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#F11F1B" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-close-sign">                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#F11F1B" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-close-sign">                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#F11F1B" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Unbranded experience (Remove Proviews branding)
+                  </td>
+                  <td>
+                    <div class="compare-table-close-sign">                      
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#F11F1B" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Reviews Drawer
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Reviews Notification
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    All Reviews Page
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Preview Badge (Star Rating)
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Reviews Carousel
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Customized emails
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Reviews Carousel
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Coupons (Discount Code)
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Product Reviews Grouping
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    SEO Rich Snippets
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Email Blacklisting
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Flagg inappropriate Reviews
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Reviews Voting
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                  <td> 
+                    <div class="compare-table-yes-sign">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#005278" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="fs-22 fw-medium text-center pt-4">
+        Proviews ‑ Product Reviews Q&A
+      </div>
+      <div class="text-616 text-center mb-3 pb-1">
+        Collect Reviews, Manage Q&A, UGC & Promote On Google Shopping.
+      </div>
+      <div class="accordion" id="ProductReviewsAccordion">
+        <div class="accordion-item rounded-4 mb-10">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-white border-0 fw-medium rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerOne" aria-expanded="true" aria-controls="collapseInnerOne">
+              Installation Processes (Proviews)
+            </button>
+          </h2>
+          <div id="collapseInnerOne" class="accordion-collapse collapse show">
+            <div class="accordion-body pt-0">
+              <ul class="ps-4 text-616 mb-0">
+                <li>
+                  Step by Step Self Installation Guide of Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Privacy Policy – Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Pricing for Proviews – Product Reviews Q&A
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item rounded-4 mb-10">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-white border-0 fw-medium rounded-4 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerTwo" aria-expanded="false" aria-controls="collapseInnerTwo">
+              Installation Processes (Proviews)
+            </button>
+          </h2>
+          <div id="collapseInnerTwo" class="accordion-collapse collapse">
+            <div class="accordion-body pt-0">
+              <ul class="ps-4 text-616 mb-0">
+                <li>
+                  Step by Step Self Installation Guide of Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Privacy Policy – Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Pricing for Proviews – Product Reviews Q&A
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+        <div class="accordion-item rounded-4 mb-10">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-white border-0 fw-medium rounded-4 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerThree" aria-expanded="false" aria-controls="collapseInnerThree">
+              Post Installation process (Proviews)
+            </button>
+          </h2>
+          <div id="collapseInnerThree" class="accordion-collapse collapse">
+            <div class="accordion-body pt-0">
+              <ul class="ps-4 text-616 mb-0">
+                <li>
+                  Step by Step Self Installation Guide of Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Privacy Policy – Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Pricing for Proviews – Product Reviews Q&A
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+        <div class="accordion-item rounded-4 mb-10">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-white border-0 fw-medium rounded-4 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerFour" aria-expanded="false" aria-controls="collapseInnerFour">
+              Additional Information
+            </button>
+          </h2>
+          <div id="collapseInnerFour" class="accordion-collapse collapse">
+            <div class="accordion-body pt-0">
+              <ul class="ps-4 text-616 mb-0">
+                <li>
+                  Step by Step Self Installation Guide of Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Privacy Policy – Proviews – Product Reviews Q&A
+                </li>
+                <li>
+                  Pricing for Proviews – Product Reviews Q&A
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+    
+  </div>
+  <!-- Import and export end -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/selectize.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

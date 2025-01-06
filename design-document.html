@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proview App</title>
+    <link rel="icon" type="image/svg" href="images/Uploaded-Favicon.svg">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body class="bg-F5F7F7">
+    <div class="container pb-5 onboard dashboard">
+        <div class="row gy-4 pt-4">
+            <div class="col-12 pb-3 mb-3 border-bottom">
+               <h2>
+                Proview Design Document
+               </h2>
+            </div> 
+            <div class="col-md-3">Modal</div>
+            <div class="col-md-9">
+                <div class="row g-2">
+                    <div class="col-auto">
+                        <button type="button" class="btn me-2" data-bs-toggle="modal" data-bs-target="#launchModal">
+                            Basic Modal
+                        </button>
+                        <div class="modal modal-theme-with-header fade  px-2" id="launchModal" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Modal Header</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body px-md-3 mx-1">
+                                        Modal body
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn me-2" data-bs-toggle="modal" data-bs-target="#successModal">
+                            Success Modal
+                        </button>
+                        <div class="modal modal-theme-with-header fade  px-2" id="successModal" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"> 
+                                    <div class="modal-body px-md-3 mx-1 text-center">
+                                        <div class="mx-auto">
+                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.2" cx="60" cy="60" r="59.6891" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle opacity="0.5" cx="59.9985" cy="59.9985" r="50.9845" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="url(#paint0_linear_2825_24273)"/>
+                                                <mask id="mask0_2825_24273" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="94" height="94">
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="#D9D9D9"/>
+                                                </mask>
+                                                <g mask="url(#mask0_2825_24273)">
+                                                <g opacity="0.4" filter="url(#filter0_f_2825_24273)">
+                                                <ellipse cx="60" cy="116" rx="43" ry="31" fill="#00845C"/>
+                                                </g>
+                                                <g opacity="0.4" filter="url(#filter1_f_2825_24273)">
+                                                <ellipse cx="60" cy="-11" rx="43" ry="31" fill="#00845C"/>
+                                                </g>
+                                                </g>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M81.9617 46.6851C82.4954 47.2194 82.7951 47.9438 82.7951 48.6991C82.7951 49.4543 82.4954 50.1787 81.9617 50.7131L57.2617 75.4131C56.7273 75.9468 56.0029 76.2465 55.2477 76.2465C54.4924 76.2465 53.768 75.9468 53.2337 75.4131L40.8837 63.0631C40.6036 62.8021 40.3791 62.4875 40.2233 62.1379C40.0675 61.7883 39.9838 61.4109 39.977 61.0282C39.9703 60.6456 40.0406 60.2655 40.184 59.9106C40.3273 59.5557 40.5407 59.2333 40.8113 58.9627C41.0819 58.6921 41.4043 58.4787 41.7592 58.3354C42.1141 58.192 42.4942 58.1217 42.8768 58.1284C43.2595 58.1352 43.6369 58.2189 43.9865 58.3747C44.3361 58.5305 44.6507 58.755 44.9117 59.0351L55.2477 69.3711L77.9337 46.6851C78.468 46.1513 79.1924 45.8516 79.9477 45.8516C80.7029 45.8516 81.4273 46.1513 81.9617 46.6851Z" fill="#00845C"/>
+                                                <defs>
+                                                <filter id="filter0_f_2825_24273" x="-10.3575" y="57.6425" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2825_24273"/>
+                                                </filter>
+                                                <filter id="filter1_f_2825_24273" x="-10.3575" y="-69.3575" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2825_24273"/>
+                                                </filter>
+                                                <linearGradient id="paint0_linear_2825_24273" x1="59.9977" y1="13.0586" x2="59.9977" y2="106.945" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white"/>
+                                                <stop offset="1" stop-color="white"/>
+                                                </linearGradient>
+                                                </defs>
+                                                </svg>    
+                                        </div>
+                                       <div class="fs-22 fw-semibold pb-10">
+                                        Success Message
+                                       </div>
+                                       <p class="fs-14 text-616">
+                                        Lorem ipsum is simply dummy text to design any page <br class="d-md-block d-none"> without real content
+                                       </p>
+                                    </div>
+                                    <div class="modal-footer shadow-none border-top">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn me-2" data-bs-toggle="modal" data-bs-target="#WarningModal">
+                            Warning Modal
+                        </button>
+                        <div class="modal modal-theme-with-header fade  px-2" id="WarningModal" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"> 
+                                    <div class="modal-body px-md-3 mx-1 text-center">
+                                        <div class="mx-auto">
+                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.2" cx="60" cy="60" r="59.6891" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle opacity="0.5" cx="59.9985" cy="59.9985" r="50.9845" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="url(#paint0_linear_2825_26182)"/>
+                                                <mask id="mask0_2825_26182" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="94" height="94">
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="#D9D9D9"/>
+                                                </mask>
+                                                <g mask="url(#mask0_2825_26182)">
+                                                <g opacity="0.4" filter="url(#filter0_f_2825_26182)">
+                                                <ellipse cx="60" cy="116" rx="43" ry="31" fill="#FFE73E"/>
+                                                </g>
+                                                <g opacity="0.4" filter="url(#filter1_f_2825_26182)">
+                                                <ellipse cx="60" cy="-11" rx="43" ry="31" fill="#FFE73E"/>
+                                                </g>
+                                                </g>
+                                                <path d="M60 52.5C60.3978 52.5 60.7794 52.658 61.0607 52.9393C61.342 53.2206 61.5 53.6022 61.5 54V61C61.5 61.3978 61.342 61.7794 61.0607 62.0607C60.7794 62.342 60.3978 62.5 60 62.5C59.6022 62.5 59.2206 62.342 58.9393 62.0607C58.658 61.7794 58.5 61.3978 58.5 61V54C58.5 53.6022 58.658 53.2206 58.9393 52.9393C59.2206 52.658 59.6022 52.5 60 52.5Z" fill="#50470C"/>
+                                                <path d="M62 66C62 66.5304 61.7893 67.0391 61.4142 67.4142C61.0391 67.7893 60.5304 68 60 68C59.4696 68 58.9609 67.7893 58.5858 67.4142C58.2107 67.0391 58 66.5304 58 66C58 65.4696 58.2107 64.9609 58.5858 64.5858C58.9609 64.2107 59.4696 64 60 64C60.5304 64 61.0391 64.2107 61.4142 64.5858C61.7893 64.9609 62 65.4696 62 66Z" fill="#50470C"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M60.0003 46C57.9103 46 56.4323 47.404 55.6963 48.894C54.372 51.4651 53.0353 54.0298 51.6863 56.588L51.6303 56.692C50.2778 59.2554 48.9391 61.8261 47.6143 64.404C46.8703 65.908 46.6583 67.904 47.8003 69.632C48.9403 71.358 50.8843 72 52.7283 72H67.2723C69.1163 72 71.0623 71.36 72.2003 69.632C73.3403 67.904 73.1303 65.908 72.3863 64.404C71.9663 63.556 70.1603 60.11 68.3783 56.71L68.3143 56.588C66.9647 54.0301 65.628 51.4654 64.3043 48.894C63.5683 47.404 62.0903 46 60.0003 46ZM58.3843 50.224C59.1923 48.592 60.8083 48.592 61.6163 50.224C62.0203 51.042 63.8403 54.514 65.6603 57.984C67.0191 60.5603 68.3644 63.1437 69.6963 65.734C70.5043 67.368 69.6963 69 67.2723 69H52.7283C50.3043 69 49.4943 67.368 50.3043 65.734C50.7083 64.918 52.5303 61.44 54.3503 57.968C55.7083 55.3936 57.053 52.8123 58.3843 50.224Z" fill="#50470C"/>
+                                                <defs>
+                                                <filter id="filter0_f_2825_26182" x="-10.3575" y="57.6425" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2825_26182"/>
+                                                </filter>
+                                                <filter id="filter1_f_2825_26182" x="-10.3575" y="-69.3575" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2825_26182"/>
+                                                </filter>
+                                                <linearGradient id="paint0_linear_2825_26182" x1="59.9977" y1="13.0586" x2="59.9977" y2="106.945" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white"/>
+                                                <stop offset="1" stop-color="white"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                       <div class="fs-22 fw-semibold pb-10">
+                                        Alert/Warning Message
+                                       </div>
+                                       <p class="fs-14 text-616">
+                                        Lorem ipsum is simply dummy text to design any page <br class="d-md-block d-none"> without real content
+                                       </p>
+                                    </div>
+                                    <div class="modal-footer shadow-none border-top">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn me-2" data-bs-toggle="modal" data-bs-target="#InformationModal">
+                            Information Modal
+                        </button>
+                        <div class="modal modal-theme-with-header fade  px-2" id="InformationModal" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"> 
+                                    <div class="modal-body px-md-3 mx-1 text-center">
+                                        <div class="mx-auto">
+                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.2" cx="60" cy="60" r="59.6891" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle opacity="0.5" cx="59.9985" cy="59.9985" r="50.9845" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="url(#paint0_linear_2830_71737)"/>
+                                                <mask id="mask0_2830_71737" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="94" height="94">
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="#D9D9D9"/>
+                                                </mask>
+                                                <g mask="url(#mask0_2830_71737)">
+                                                <g opacity="0.4" filter="url(#filter0_f_2830_71737)">
+                                                <ellipse cx="60" cy="116" rx="43" ry="31" fill="#85D0FC"/>
+                                                </g>
+                                                <g opacity="0.4" filter="url(#filter1_f_2830_71737)">
+                                                <ellipse cx="60" cy="-11" rx="43" ry="31" fill="#85D0FC"/>
+                                                </g>
+                                                </g>
+                                                <path d="M60 67C59.6022 67 59.2206 66.842 58.9393 66.5607C58.658 66.2794 58.5 65.8978 58.5 65.5V58.5C58.5 58.1022 58.658 57.7206 58.9393 57.4393C59.2206 57.158 59.6022 57 60 57C60.3978 57 60.7794 57.158 61.0607 57.4393C61.342 57.7206 61.5 58.1022 61.5 58.5V65.5C61.5 65.8978 61.342 66.2794 61.0607 66.5607C60.7794 66.842 60.3978 67 60 67Z" fill="#00527A"/>
+                                                <path d="M58 53C58 52.4696 58.2107 51.9609 58.5858 51.5858C58.9609 51.2107 59.4696 51 60 51C60.5304 51 61.0391 51.2107 61.4142 51.5858C61.7893 51.9609 62 52.4696 62 53C62 53.5304 61.7893 54.0391 61.4142 54.4142C61.0391 54.7893 60.5304 55 60 55C59.4696 55 58.9609 54.7893 58.5858 54.4142C58.2107 54.0391 58 53.5304 58 53Z" fill="#00527A"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M74 59C74 60.8385 73.6379 62.659 72.9343 64.3576C72.2307 66.0561 71.1995 67.5995 69.8995 68.8995C68.5995 70.1995 67.0561 71.2307 65.3576 71.9343C63.659 72.6379 61.8385 73 60 73C58.1615 73 56.341 72.6379 54.6424 71.9343C52.9439 71.2307 51.4005 70.1995 50.1005 68.8995C48.8005 67.5995 47.7693 66.0561 47.0657 64.3576C46.3621 62.659 46 60.8385 46 59C46 55.287 47.475 51.726 50.1005 49.1005C52.726 46.475 56.287 45 60 45C63.713 45 67.274 46.475 69.8995 49.1005C72.525 51.726 74 55.287 74 59ZM71 59C71 61.9174 69.8411 64.7153 67.7782 66.7782C65.7153 68.8411 62.9174 70 60 70C57.0826 70 54.2847 68.8411 52.2218 66.7782C50.1589 64.7153 49 61.9174 49 59C49 56.0826 50.1589 53.2847 52.2218 51.2218C54.2847 49.1589 57.0826 48 60 48C62.9174 48 65.7153 49.1589 67.7782 51.2218C69.8411 53.2847 71 56.0826 71 59Z" fill="#00527A"/>
+                                                <defs>
+                                                <filter id="filter0_f_2830_71737" x="-10.3575" y="57.6425" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2830_71737"/>
+                                                </filter>
+                                                <filter id="filter1_f_2830_71737" x="-10.3575" y="-69.3575" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2830_71737"/>
+                                                </filter>
+                                                <linearGradient id="paint0_linear_2830_71737" x1="59.9977" y1="13.0586" x2="59.9977" y2="106.945" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white"/>
+                                                <stop offset="1" stop-color="white"/>
+                                                </linearGradient>
+                                                </defs>
+                                                </svg>    
+                                        </div>
+                                       <div class="fs-22 fw-semibold pb-10">
+                                        Information Message
+                                       </div>
+                                       <p class="fs-14 text-616">
+                                        Lorem ipsum is simply dummy text to design any page <br class="d-md-block d-none"> without real content
+                                       </p>
+                                    </div>
+                                    <div class="modal-footer shadow-none border-top">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn me-2" data-bs-toggle="modal" data-bs-target="#ErrorModal">
+                            Error Modal
+                        </button>
+                        <div class="modal modal-theme-with-header fade  px-2" id="ErrorModal" data-bs-backdrop="static"
+                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content"> 
+                                    <div class="modal-body px-md-3 mx-1 text-center">
+                                        <div class="mx-auto">
+                                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.2" cx="60" cy="60" r="59.6891" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle opacity="0.5" cx="59.9985" cy="59.9985" r="50.9845" stroke="#D9D9D9" stroke-width="0.621762"/>
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="url(#paint0_linear_2830_71768)"/>
+                                                <mask id="mask0_2830_71768" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="13" width="94" height="94">
+                                                <circle cx="59.9977" cy="60.0016" r="46.943" fill="#D9D9D9"/>
+                                                </mask>
+                                                <g mask="url(#mask0_2830_71768)">
+                                                <g opacity="0.4" filter="url(#filter0_f_2830_71768)">
+                                                <ellipse cx="60" cy="116" rx="43" ry="31" fill="#F11F1B"/>
+                                                </g>
+                                                <g opacity="0.4" filter="url(#filter1_f_2830_71768)">
+                                                <ellipse cx="60" cy="-11" rx="43" ry="31" fill="#F11F1B"/>
+                                                </g>
+                                                </g>
+                                                <path d="M60 51C60.3978 51 60.7794 51.158 61.0607 51.4393C61.342 51.7206 61.5 52.1022 61.5 52.5V59.5C61.5 59.8978 61.342 60.2794 61.0607 60.5607C60.7794 60.842 60.3978 61 60 61C59.6022 61 59.2206 60.842 58.9393 60.5607C58.658 60.2794 58.5 59.8978 58.5 59.5V52.5C58.5 52.1022 58.658 51.7206 58.9393 51.4393C59.2206 51.158 59.6022 51 60 51Z" fill="#F11F1B"/>
+                                                <path d="M62 65C62 65.5304 61.7893 66.0391 61.4142 66.4142C61.0391 66.7893 60.5304 67 60 67C59.4696 67 58.9609 66.7893 58.5858 66.4142C58.2107 66.0391 58 65.5304 58 65C58 64.4696 58.2107 63.9609 58.5858 63.5858C58.9609 63.2107 59.4696 63 60 63C60.5304 63 61.0391 63.2107 61.4142 63.5858C61.7893 63.9609 62 64.4696 62 65Z" fill="#F11F1B"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M62.4734 45.3524C61.8171 44.6965 60.9272 44.3281 59.9994 44.3281C59.0715 44.3281 58.1817 44.6965 57.5254 45.3524L46.3534 56.5224C46.0283 56.8474 45.7705 57.2332 45.5946 57.6579C45.4187 58.0826 45.3281 58.5377 45.3281 58.9974C45.3281 59.457 45.4187 59.9122 45.5946 60.3369C45.7705 60.7615 46.0283 61.1474 46.3534 61.4724L57.5254 72.6444C58.1817 73.3002 59.0715 73.6686 59.9994 73.6686C60.9272 73.6686 61.8171 73.3002 62.4734 72.6444L73.6454 61.4724C73.9704 61.1474 74.2283 60.7615 74.4042 60.3369C74.5801 59.9122 74.6706 59.457 74.6706 58.9974C74.6706 58.5377 74.5801 58.0826 74.4042 57.6579C74.2283 57.2332 73.9704 56.8474 73.6454 56.5224L62.4734 45.3524ZM59.6454 47.4724C59.6918 47.4258 59.747 47.3889 59.8077 47.3637C59.8685 47.3385 59.9336 47.3255 59.9994 47.3255C60.0651 47.3255 60.1303 47.3385 60.191 47.3637C60.2518 47.3889 60.3069 47.4258 60.3534 47.4724L71.5254 58.6444C71.5719 58.6908 71.6089 58.746 71.6341 58.8067C71.6593 58.8675 71.6723 58.9326 71.6723 58.9984C71.6723 59.0641 71.6593 59.1293 71.6341 59.19C71.6089 59.2508 71.5719 59.3059 71.5254 59.3524L60.3534 70.5224C60.3069 70.5689 60.2518 70.6059 60.191 70.6311C60.1303 70.6563 60.0651 70.6693 59.9994 70.6693C59.9336 70.6693 59.8685 70.6563 59.8077 70.6311C59.747 70.6059 59.6918 70.5689 59.6454 70.5224L48.4734 59.3524C48.4268 59.3059 48.3899 59.2508 48.3647 59.19C48.3395 59.1293 48.3265 59.0641 48.3265 58.9984C48.3265 58.9326 48.3395 58.8675 48.3647 58.8067C48.3899 58.746 48.4268 58.6908 48.4734 58.6444L59.6454 47.4724Z" fill="#F11F1B"/>
+                                                <defs>
+                                                <filter id="filter0_f_2830_71768" x="-10.3575" y="57.6425" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2830_71768"/>
+                                                </filter>
+                                                <filter id="filter1_f_2830_71768" x="-10.3575" y="-69.3575" width="140.715" height="116.715" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                                <feGaussianBlur stdDeviation="13.6788" result="effect1_foregroundBlur_2830_71768"/>
+                                                </filter>
+                                                <linearGradient id="paint0_linear_2830_71768" x1="59.9977" y1="13.0586" x2="59.9977" y2="106.945" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white"/>
+                                                <stop offset="1" stop-color="white"/>
+                                                </linearGradient>
+                                                </defs>
+                                                </svg>    
+                                        </div>
+                                       <div class="fs-22 fw-semibold pb-10">
+                                        Error Message
+                                       </div>
+                                       <p class="fs-14 text-616">
+                                        Lorem ipsum is simply dummy text to design any page <br class="d-md-block d-none"> without real content
+                                       </p>
+                                    </div>
+                                    <div class="modal-footer shadow-none border-top">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Main heading
+            </div>
+            <div class="col-md-9">
+                <h1 class="align-items-start d-flex flex-column flex-sm-row fw-semibold mb-0 fs-20">
+                    Create custom form
+                </h1>
+            </div>
+            <div class="col-md-3">
+                Sub heading
+            </div>
+            <div class="col-md-9">
+                <div class="sub-heading">
+                    Sub Heading
+                </div>
+            </div>
+            <div class="col-md-3">
+                How it works badge
+            </div>
+            <div class="col-md-9">
+                <a href="#" class="how-it-work fs-12 text-decoration-none mt-6 text-nowrap">How it works?
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                        <path fill="#005278"
+                            d="M11.75 4.5a.75.75 0 0 0 0 1.5h1.19l-2.72 2.72a.75.75 0 1 0 1.06 1.06l2.72-2.72v1.19a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-.75-.75h-3Z" />
+                        <path fill="#005278"
+                            d="M15 11.25a.75.75 0 0 0-1.5 0v1c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5c0-.69.56-1.25 1.25-1.25h1a.75.75 0 0 0 0-1.5h-1a2.75 2.75 0 0 0-2.75 2.75v4.5a2.75 2.75 0 0 0 2.75 2.75h4.5a2.75 2.75 0 0 0 2.75-2.75v-1Z" />
+                    </svg></a>
+            </div>
+            <div class="col-md-3">
+                Card
+            </div>
+            <div class="col-md-9">
+                <div class="card p-0">
+                    <div class="card-header bg-transparent">
+                        Card Header
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Radio Button
+            </div>
+            <div class="col-md-9">
+                <div class="radio-black pb-3 mb-1">
+                    <div class="form-check custom-radio2">
+                        <label class="form-check-label " for="Public">
+                            <input class="form-check-input" type="radio" name="answerPrivacy" id="Public" checked>
+                            Public
+                        </label>
+                    </div>
+                    <div class="form-check custom-radio2">
+                        <label class="form-check-label " for="Private">
+                            <input class="form-check-input" type="radio" name="answerPrivacy" id="Private">
+                            Private
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Switch
+            </div>
+            <div class="col-md-9">
+                <div class="form-check form-switch">
+                    <input class="form-check-input switch-success" type="checkbox" role="switch" id="SwitchOne" checked="">
+                    <label class="form-check-label fw-semibold ms-2" for="SwitchOne">SwitchOne</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Buttons
+            </div>
+            <div class="col-md-9">
+                <label class="form-check-label fw-semibold ms-2">Basic</label>
+                <div class="d-flex flex-wrap mb-3">
+                    <button class="btn me-2" type="button">
+                        Button
+                    </button>
+                    <button class="btn me-2 disabled" type="button">
+                        Button
+                    </button>
+                    <a href="#" class="btn me-2">
+                        Link
+                    </a>
+                </div>
+                <label class="form-check-label fw-semibold ms-2">Theme</label>
+                <div class="d-flex flex-wrap mb-3">
+                    <button class="btn btn-primary me-2" type="button">
+                        Button
+                    </button>
+                    <button class="btn btn-danger me-2" type="button">
+                        Button
+                    </button>
+                </div>
+                <label class="form-check-label fw-semibold ms-2">Theme Disabled</label>
+                <div class="d-flex flex-wrap mb-3">
+                    <button class="btn btn-primary me-2 disabled" type="button">
+                        Button
+                    </button>
+                    <button class="btn btn-danger me-2 disabled" type="button">
+                        Button
+                    </button>
+                </div>
+                <label class="form-check-label fw-semibold ms-2">Icons</label>
+                <div class="d-flex flex-wrap mb-3">
+                    <button type="submit" class="btn me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1"><path fill-rule="evenodd" d="M13 10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-1.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"></path><path fill-rule="evenodd" d="M10 4c-2.476 0-4.348 1.23-5.577 2.532a9.266 9.266 0 0 0-1.4 1.922 5.98 5.98 0 0 0-.37.818c-.082.227-.153.488-.153.728s.071.501.152.728c.088.246.213.524.371.818.317.587.784 1.27 1.4 1.922 1.229 1.302 3.1 2.532 5.577 2.532 2.476 0 4.348-1.23 5.577-2.532a9.265 9.265 0 0 0 1.4-1.922 5.98 5.98 0 0 0 .37-.818c.082-.227.153-.488.153-.728s-.071-.501-.152-.728a5.984 5.984 0 0 0-.371-.818 9.269 9.269 0 0 0-1.4-1.922c-1.229-1.302-3.1-2.532-5.577-2.532Zm-5.999 6.002v-.004c.004-.02.017-.09.064-.223a4.5 4.5 0 0 1 .278-.608 7.768 7.768 0 0 1 1.17-1.605c1.042-1.104 2.545-2.062 4.487-2.062 1.942 0 3.445.958 4.486 2.062a7.77 7.77 0 0 1 1.17 1.605c.13.24.221.447.279.608.047.132.06.203.064.223v.004c-.004.02-.017.09-.064.223a4.503 4.503 0 0 1-.278.608 7.768 7.768 0 0 1-1.17 1.605c-1.042 1.104-2.545 2.062-4.487 2.062-1.942 0-3.445-.958-4.486-2.062a7.766 7.766 0 0 1-1.17-1.605 4.5 4.5 0 0 1-.279-.608c-.047-.132-.06-.203-.064-.223Z"></path></svg> Button
+                      </button>
+                      <button type="submit" class="btn btn-primary me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1" viewBox="0 0 20 20" width="20" height="20"><path fill="#ffffff" d="M10.75 4.25a.75.75 0 0 0-1.5 0v6.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72v-6.69Z"></path><path fill="#ffffff" d="M16.5 13.75a.75.75 0 0 0-1.5 0v.8a.75.75 0 0 1-.75.75h-8.5a.75.75 0 0 1-.75-.75v-.8a.75.75 0 0 0-1.5 0v.8a2.25 2.25 0 0 0 2.25 2.25h8.5a2.25 2.25 0 0 0 2.25-2.25v-.8Z"></path></svg> Button
+                      </button>
+                    <button class="btn btn-danger me-2" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20">
+                            <path fill="#ffffff" d="M10.75 5.75c0-.414-.336-.75-.75-.75s-.75.336-.75.75v3.5h-3.5c-.414 0-.75.336-.75.75s.336.75.75.75h3.5v3.5c0 .414.336.75.75.75s.75-.336.75-.75v-3.5h3.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-3.5v-3.5Z"></path>
+                          </svg> Button
+                    </button>
+                </div>
+                
+            </div>
+            <div class="col-md-3">
+                Toast
+            </div>
+            <div class="col-md-9">
+                <div class="col-auto">
+                    <button class="btn btn-primary" type="button" id="liveToastBtn">
+                        Toast
+                    </button> 
+                  </div>
+                  <div class="toast-container position-fixed bottom-0 start-50 p-3 translate-middle">
+                    <div id="basicToast" class="toast bg-transparent border-0 shadow-none text-center w-auto" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-body bg-black text-white rounded-12 ps-3">
+                        <span class="ps-1">Save Changes </span>
+                          <button type="button" class="bg-transparent border-0" data-bs-dismiss="toast">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20"><path fill="#ffffff" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                        </button>
+                      </div>
+                       
+                    </div>  
+                  </div>
+            </div>
+            <div class="col-md-3">
+                Badge
+            </div>
+            <div class="col-md-9"> 
+                <div class="align-items-start d-flex flex-wrap">
+                    <span class="status status-theme text-center me-2 fs-12">
+                        Web Review
+                    </span>
+                    <div class="badge badge-success fw-normal me-2 fs-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16"><path fill="#00845C" d="M13.28 9.03a.75.75 0 0 0-1.06-1.06l-2.97 2.97-1.22-1.22a.75.75 0 0 0-1.06 1.06l1.75 1.75a.75.75 0 0 0 1.06 0l3.5-3.5Z"></path><path fill="#00845C" fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"></path></svg>
+                        Verified
+                    </div>
+                    <span class="mb-1 align-items-center badge-pending d-flex  fs-12 justify-content-center me-2 text-nowrap mb-small-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="16">
+                            <path fill="#61420D" d="M10.75 6a.75.75 0 0 0-1.5 0v4c0 .199.079.39.22.53l2 2a.75.75 0 1 0 1.06-1.06l-1.78-1.78v-3.69Z"></path>
+                            <path fill="#61420D" fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"></path>
+                        </svg> Pending
+                    </span>
+                    <span class="mb-1 align-items-center status-unfulfilled badge-pending d-flex fs-12 justify-content-center me-2 text-nowrap mb-small-5">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="7.99844" cy="8.00039" r="5.1" stroke="#50470C"></circle>
+                        </svg>
+                        Unfulfilled
+                    </span>
+                    <span class="status status-publieshed me-2 fs-12">
+                        Publieshed
+                    </span>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                Tooltip
+            </div>
+            <div class="col-md-9"> 
+                <div class="d-flex flex-wrap">
+                    <button class="btn me-2 mt-1" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-trigger="hover focus" data-bs-content="Left Tooltip">Tooltip on Left</button>
+                    <button class="btn me-2 mt-1" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="Top Tooltip">Tooltip on top</button>
+                <button class="btn me-2 mt-1" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" data-bs-content="Bottom Tooltip">Tooltip on Bottom</button>
+                <button class="btn me-2 mt-1" type="button" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="hover focus" data-bs-content="Right Tooltip">Tooltip on Right</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Progress
+            </div>
+            <div class="col-md-9">
+                <div class="progress bg-E5EEF1 rounded-0 mb-1 h-22" role="progressbar" aria-label="Example with label"
+                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-theme-primary" style="width: 40%"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Form controls
+            </div>
+            <div class="col-md-9">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="Title">Title</label>
+                        <input type="text" class="form-control h-40 fs-14" placeholder="Title" id="Title">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="Email">Email</label>
+                        <input type="email" class="form-control theme-input text-A0A0A0 fs-14" id="Email"
+                            aria-describedby="Email" placeholder="test@mystore.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Disabled</label>
+                        <input type="email" class="form-control theme-input text-A0A0A0 fs-14" id="fromEmail"
+                            aria-describedby="emailHelp" placeholder="test@mystore.com" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="colorPicker">Color
+                            Picker</label>
+                        <div class="align-items-center card d-flex flex-row p-1 pe-2 rounded-pill w-138 py-5px">
+                            <div class="me-2">
+                                <input type="color" value="#005CEA" id="colorPicker"
+                                    class="border-0 d-block h-30 m-0 outline-none p-0 rounded-pill shadow-none w-46">
+                            </div>
+                            <div class="picker-value fs-12">
+                                #005CEA
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-1 fs-14">File input example</div>
+                        <label for="formFile"
+                            class="align-items-center custom-file-upload d-flex flex-column form-label justify-content-center w-100 bg-white">
+                            <div class="btn text-nowrap mb-1">Add file</div>
+                            <div class="d-block w-100 text-center fs-13 text-A0A0A0 fw-medium">
+                                Accept .CSV file
+                            </div>
+                        </label>
+                        <input class="form-control d-none" type="file" id="formFile">
+                    </div> 
+                    <div class="col-md-12">
+                        <label for="FormControlTextarea1" class="form-label fs-14"> Text Area</label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1" for="">Select Option</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected="">1 day letter</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div> 
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Error Input</label>
+                    <input type="text" class="form-control h-40 fs-14 input-required-error" placeholder="Site Review">
+                    <div class="field-required-error text-danger-error mt-1 d-flex align-items-center fs-14">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" class="me-1">
+                        <path fill="#952015"
+                          d="M10 14a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 1 1.5 0v3.5a.75.75 0 0 1-.75.75Z" />
+                        <path fill="#952015" d="M9 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" />
+                        <path fill="#952015" fill-rule="evenodd"
+                          d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z" />
+                      </svg> Site widget title required
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fs-14 text-303030 mb-1 d-flex align-items-center" for="">Min Max</label>
+                      <input type="number" class="form-select num-select" name="quantity" value="3" min="1" max="500">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Tabs 
+            </div>
+            <div class="col-md-9">
+                <nav class="nav-bar-tabs">
+                    <div class="nav nav-tabs mb-3 p-2 bg-EAEAEA rounded-14" id="reviewEmailTemplateTab" role="tablist">
+                      <button class="border-0 nav-link text-303030 rounded-14 fs-14 w-50 active" id="review-link-template-tab" data-bs-toggle="tab" data-bs-target="#review-link-template" type="button" role="tab" aria-controls="review-link-template" aria-selected="true">Review link template</button>
+                      <button class="border-0 nav-link text-303030 rounded-14 fs-14 w-50" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Review link template</button> 
+                    </div>
+                </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade active show" id="review-link-template" role="tabpanel" aria-labelledby="review-link-template-tab">
+                        <div>
+                            Tab Content goes here....
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div>
+                            Tab Content goes here....
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                Accordion
+            </div>
+            <div class="col-md-9">
+                <div class="accordion" id="ProductReviewsAccordion">
+                    <div class="accordion-item rounded-4 mb-10">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button bg-white border-0 fw-medium rounded-4 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerOne" aria-expanded="true" aria-controls="collapseInnerOne">
+                          Accordion 1
+                        </button>
+                      </h2>
+                      <div id="collapseInnerOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body pt-0">
+                          <ul class="ps-4 text-616 mb-0">
+                            <li>
+                                Accordion content 1
+                            </li>
+                            <li>
+                                Accordion content 1
+                            </li>
+                            <li>
+                                Accordion content 1
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item rounded-4 mb-10">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button bg-white border-0 fw-medium rounded-4 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerTwo" aria-expanded="false" aria-controls="collapseInnerTwo">
+                            Accordion 2
+                        </button>
+                      </h2>
+                      <div id="collapseInnerTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body pt-0">
+                           <div>
+                            Accordion Content
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+            <div class="col-md-3">
+                Note
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="custom-acc-note fs-14 mb-3 d-flex align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1" viewBox="0 0 20 20" width="24" style="min-width: 24px;"><path fill="#00527A" d="M10 6a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z"/><path fill="#00527A" d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path fill="#00527A" fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"/></svg>
+                        <span>A review request will be sent once the order is Fullfilled. The duration of request will be after 9 days(s) of order fullfillment</span> 
+                      </div>
+                      <div class="custom-note-warning fs-14 mb-3 d-flex align-items-start">                        
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" style="min-width: 24px;"><path fill="#50470C" d="M10 6.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 1 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z"/><path fill="#50470C" d="M11 13.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path fill="#50470C" fill-rule="evenodd" d="M10 3.5c-1.045 0-1.784.702-2.152 1.447a449.26 449.26 0 0 1-2.005 3.847l-.028.052a403.426 403.426 0 0 0-2.008 3.856c-.372.752-.478 1.75.093 2.614.57.863 1.542 1.184 2.464 1.184h7.272c.922 0 1.895-.32 2.464-1.184.57-.864.465-1.862.093-2.614-.21-.424-1.113-2.147-2.004-3.847l-.032-.061a429.497 429.497 0 0 1-2.005-3.847c-.368-.745-1.107-1.447-2.152-1.447Zm-.808 2.112c.404-.816 1.212-.816 1.616 0 .202.409 1.112 2.145 2.022 3.88a418.904 418.904 0 0 1 2.018 3.875c.404.817 0 1.633-1.212 1.633h-7.272c-1.212 0-1.617-.816-1.212-1.633.202-.408 1.113-2.147 2.023-3.883a421.932 421.932 0 0 0 2.017-3.872Z"/></svg>
+                        <span>A review request will be sent once the order is Fullfilled. The duration of request will be after 9 days(s) of order fullfillment</span> 
+                      </div>
+                      <div class="custom-note-success fs-14 mb-3 d-flex align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" style="min-width: 24px;"><path fill="#005134" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg>
+                        <span>A review request will be sent once the order is Fullfilled. The duration of request will be after 9 days(s) of order fullfillment</span> 
+                      </div>
+                      <div class="custom-note-danger fs-14 mb-1 d-flex align-items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24" style="min-width: 24px;"><path fill="#952015" d="M10 6a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z"/><path fill="#952015" d="M11 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path fill="#952015" fill-rule="evenodd" d="M11.237 3.177a1.75 1.75 0 0 0-2.474 0l-5.586 5.585a1.75 1.75 0 0 0 0 2.475l5.586 5.586a1.75 1.75 0 0 0 2.474 0l5.586-5.586a1.75 1.75 0 0 0 0-2.475l-5.586-5.585Zm-1.414 1.06a.25.25 0 0 1 .354 0l5.586 5.586a.25.25 0 0 1 0 .354l-5.586 5.585a.25.25 0 0 1-.354 0l-5.586-5.585a.25.25 0 0 1 0-.354l5.586-5.586Z"/></svg>
+                        <span>A review request will be sent once the order is Fullfilled. The duration of request will be after 9 days(s) of order fullfillment</span> 
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Banners
+            </div>
+            <div class="col-md-9">
+                <div class="card pt-0 px-0 mb-3">
+                    <div class="overflow-hidden rounded-top-4">
+                      <div class="info-banner-bg row px-14 py-2">
+                        <div class="col fw-medium">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path d="M10 14a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 1 1.5 0v3.5a.75.75 0 0 1-.75.75Z"/><path d="M9 7a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"/><path fill-rule="evenodd" d="M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Zm-1.5 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0Z"/></svg> Your free trail expire after 7 days
+                        </div>
+                        <div class="col-sm-1 col-2 text-end">
+                          <a href="#" class="text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="px-3 pt-3">
+                        <div class="fs-14 text-616 mb-3">
+                            You can activate the charge now or within this trial period to continue with the uninterrupted review collection. Even if you activate the charge now, your billing will be started after 7 days of the trial period. In between, if you remove the app, you will not be charged.
+                        </div>
+                        <div class="d-flex">
+                          <a href="#" class="btn h-30">
+                            Know your monthly charge
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card pt-0 px-0 mb-3">
+                    <div class="overflow-hidden rounded-top-4">
+                      <div class="bg-banner-success row px-14 py-2">
+                        <div class="col text-white fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#ffffff" fill-rule="evenodd" d="M15.78 5.97a.75.75 0 0 1 0 1.06l-6.5 6.5a.75.75 0 0 1-1.06 0l-3.25-3.25a.75.75 0 1 1 1.06-1.06l2.72 2.72 5.97-5.97a.75.75 0 0 1 1.06 0Z"/></svg> Your shipping label is ready to print.
+                        </div>
+                        <div class="col-sm-1 col-2 text-end">
+                          <a href="#" class="text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#ffffff" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="px-3 pt-3">
+                        <div class="fs-14 text-616 mb-3">
+                            You can activate the charge now or within this trial period to continue with the uninterrupted review collection. Even if you activate the charge now, your billing will be started after 7 days of the trial period. In between, if you remove the app, you will not be charged.
+                        </div>
+                        <div class="d-flex">
+                          <a href="#" class="btn h-30">
+                            Print label
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card pt-0 px-0 mb-3">
+                    <div class="overflow-hidden rounded-top-4">
+                      <div class="bg-banner-warning row px-14 py-2">
+                        <div class="col text-banner-warning fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#61420D" d="M10 6.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 1 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z"/><path fill="#61420D" d="M11 13.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path fill="#61420D" fill-rule="evenodd" d="M10 3.5c-1.045 0-1.784.702-2.152 1.447a449.26 449.26 0 0 1-2.005 3.847l-.028.052a403.426 403.426 0 0 0-2.008 3.856c-.372.752-.478 1.75.093 2.614.57.863 1.542 1.184 2.464 1.184h7.272c.922 0 1.895-.32 2.464-1.184.57-.864.465-1.862.093-2.614-.21-.424-1.113-2.147-2.004-3.847l-.032-.061a429.497 429.497 0 0 1-2.005-3.847c-.368-.745-1.107-1.447-2.152-1.447Zm-.808 2.112c.404-.816 1.212-.816 1.616 0 .202.409 1.112 2.145 2.022 3.88a418.904 418.904 0 0 1 2.018 3.875c.404.817 0 1.633-1.212 1.633h-7.272c-1.212 0-1.617-.816-1.212-1.633.202-.408 1.113-2.147 2.023-3.883a421.932 421.932 0 0 0 2.017-3.872Z"/></svg> Before you can purchase a shipping label, this change needs to be made.
+                        </div>
+                        <div class="col-sm-1 col-2 text-end">
+                          <a href="#" class="text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#61420D" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="px-3 pt-3">
+                        <div class="fs-14 text-616 mb-3">
+                            The name of the city you’re shipping to has characters that aren’t allowed. City name can only include spaces and hyphens.
+                        </div>
+                        <div class="d-flex">
+                          <a href="#" class="btn h-30">
+                            Edit address
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card pt-0 px-0 mb-3">
+                    <div class="overflow-hidden rounded-top-4">
+                      <div class="bg-banner-danger row px-14 py-2">
+                        <div class="col text-white fw-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#ffffff" d="M10 6.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 1 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z"/><path fill="#ffffff" d="M11 13.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/><path fill="#ffffff" fill-rule="evenodd" d="M10 3.5c-1.045 0-1.784.702-2.152 1.447a449.26 449.26 0 0 1-2.005 3.847l-.028.052a403.426 403.426 0 0 0-2.008 3.856c-.372.752-.478 1.75.093 2.614.57.863 1.542 1.184 2.464 1.184h7.272c.922 0 1.895-.32 2.464-1.184.57-.864.465-1.862.093-2.614-.21-.424-1.113-2.147-2.004-3.847l-.032-.061a429.497 429.497 0 0 1-2.005-3.847c-.368-.745-1.107-1.447-2.152-1.447Zm-.808 2.112c.404-.816 1.212-.816 1.616 0 .202.409 1.112 2.145 2.022 3.88a418.904 418.904 0 0 1 2.018 3.875c.404.817 0 1.633-1.212 1.633h-7.272c-1.212 0-1.617-.816-1.212-1.633.202-.408 1.113-2.147 2.023-3.883a421.932 421.932 0 0 0 2.017-3.872Z"/></svg> High risk of fraud detected
+                        </div>
+                        <div class="col-sm-1 col-2 text-end">
+                          <a href="#" class="text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="24"><path fill="#ffffff" d="M13.97 15.03a.75.75 0 1 0 1.06-1.06l-3.97-3.97 3.97-3.97a.75.75 0 0 0-1.06-1.06l-3.97 3.97-3.97-3.97a.75.75 0 0 0-1.06 1.06l3.97 3.97-3.97 3.97a.75.75 0 1 0 1.06 1.06l3.97-3.97 3.97 3.97Z"/></svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="px-3 pt-3">
+                        <div class="fs-14 text-616 mb-3">
+                            Before fulfilling this order or capturing payment, please review the Risk Analysis and determine if this order is fraudulent.
+                        </div>
+                        <div class="d-flex">
+                          <a href="#" class="btn h-30">
+                            Review risk analysis
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                Table
+            </div>
+            <div class="col-md-9">
+                <div class="row"> 
+                    <div class="col-12">
+                        <div class="bg-white rounded-top-4 fs-16 fw-medium p-3 border-D9D9D9">
+                            Review and Ratting Report
+                        </div> 
+                        <div class="px-0 tablerounededCorner table-responsive rounded-top-0">
+                            <table class="align-middle table table-striped roundedTable roundedBorderedTable">
+                                <tr>
+                                    <td width="30%" class="tbl-heading">Template</td>
+                                    <td width="14%" class="tbl-heading">
+                                        <div class="d-flex align-items-center">
+                                            <span>Sent</span> 
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="ms-1" viewBox="0 0 20 20" width="20"><path fill="#A0A0A0" d="M7.75 6.06v7.69a.75.75 0 0 1-1.5 0v-7.69l-1.72 1.72a.75.75 0 0 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06l-1.72-1.72Z"/><path fill="#A0A0A0" d="M13.75 6.25a.75.75 0 0 0-1.5 0v7.69l-1.72-1.72a.75.75 0 1 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72v-7.69Z"/></svg>
+                                        </div>    
+                                    </td>
+                                    <td width="14%" class="tbl-heading">Opened</td>
+                                    <td width="14%" class="tbl-heading">Clicked</td>
+                                    <td width="14%" class="tbl-heading">Reviewed</td>
+                                    <td width="14%" class="tbl-heading text-nowrap">Reviewed %</td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <a href="#" class="text-theme-primary text-decoration-none">Lorem ipsum simply text</a>
+                                    </td>
+                                    <td>110</td>
+                                    <td>
+                                        84
+                                    </td>
+                                    <td>71</td>
+                                    <td>66</td>
+                                    <td>74%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="text-theme-primary text-decoration-none">Lorem ipsum simply text</a>
+                                    </td>
+                                    <td>321</td>
+                                    <td>
+                                        187
+                                    </td>
+                                    <td>50</td>
+                                    <td>11</td>
+                                    <td>28%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="text-theme-primary text-decoration-none">Lorem ipsum simply text</a>
+                                    </td>
+                                    <td>547</td>
+                                    <td>
+                                        224
+                                    </td>
+                                    <td>144</td>
+                                    <td>100</td>
+                                    <td>52%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="text-theme-primary text-decoration-none">Lorem ipsum simply text</a>
+                                    </td>
+                                    <td>89</td>
+                                    <td>
+                                        74
+                                    </td>
+                                    <td>60</td>
+                                    <td>33</td>
+                                    <td>44%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="text-theme-primary text-decoration-none">Lorem ipsum simply text</a>
+                                    </td>
+                                    <td>224</td>
+                                    <td>
+                                        114
+                                    </td>
+                                    <td>25</td>
+                                    <td>12</td>
+                                    <td>21%</td>
+                                </tr>
+                            </table>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-3">
+                Empty State
+            </div>
+            <div class="col-md-9">
+                <div class="card text-center py-4 shadow-none">
+                    <img src="images/emptystate-files.png" class="img-fluid mx-auto" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title fs-20">No Data Found...</h1>
+                        <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur. Commodo sed quisque odio <br class="d-md-block d-none"> odio vel. Adipiscing non feugiat volutpat elementum cras.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="text-center btn btn-primary">
+                                <span>Action Button</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

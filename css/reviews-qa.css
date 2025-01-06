@@ -1,0 +1,245 @@
+.side-nav {
+    padding: 9px 15px;
+    margin-bottom: 6px;
+}
+.side-nav.active {
+    border: 1px solid #8AAFC1;
+    background: #F2F9FC;
+    border-radius: 14px;
+}
+.side-nav.active a {
+    color:#005278 !important;
+    font-weight: var(--fw-medium);
+}
+.site-reviews-list-card .reviews-list-card-header {
+    border-left:1px solid #D8D8D8;
+    border-right:1px solid #D8D8D8;
+    border-top:1px solid #D8D8D8;
+    padding: 9px 16px 10px 16px;
+    background-color: #ffffff;
+    border-top-right-radius: var(--radius-xxl);
+    border-top-left-radius:  var(--radius-xxl);
+    border-bottom: 1px solid #D8D8D8;
+}
+.site-reviews-list-card .menu-item {
+    margin-right: 5px; 
+}
+.site-reviews-list-card .menu-item a {
+    color: var(--color-gray-sec);
+    padding: 7px 10px;
+    display: block;
+}
+.site-reviews-list-card .menu-item.active, .site-reviews-list-card .menu-item:hover {
+    background-color: #EAEAEA;
+    border-radius: 9px;
+}
+.site-reviews-list-card .site-reviews-list-search:focus {
+    border-color: #D8D8D8;
+}
+.site-reviews-list-card .site-reviews-list-search {
+    border-top-right-radius: var(--radius-xxl);
+}
+.site-reviews-list-card #siteReviewsListSearch {
+    border-top-left-radius: var(--radius-xxl);
+}
+.site-reviews-list-card .reviews-list-card-body {
+    border-left:1px solid #D8D8D8;
+    border-right:1px solid #D8D8D8;
+    padding: 15px 16px 16px 16px;
+    background-color: #ffffff;
+} 
+.site-reviews-list-card .cards::-webkit-scrollbar {
+    display: none;
+  }
+.site-reviews-list-card .score {
+    border: 1px solid #B0C9D5;
+    background-color: #F2F9FC;
+    border-radius: var(--radius-sm);
+    padding: 3px 7px;
+    color: var(--primary);
+}
+.filter-dropdown.filter-dropdown-min-w-700 .form-select {
+    padding-top: 6px;
+    padding-bottom: 6px; 
+}
+.custom-dropdown-select-list .filter-dropdown-list:has(.form-check-input:checked) {
+    background: #F2F9FC;
+    border-radius: var(--radius-xl);
+    border: unset;
+    display: block;
+    color: var(--primary);
+    font-weight: var(--fw-normal);
+}
+.filter-dropdown {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: var(--radius-xl);
+    box-shadow: 0px 4px 6px 0px #42393133;
+    min-width: 210px;
+}
+.filter-dropdown.filter-dropdown-min-w-700 {
+    min-width: max-content;
+}
+.filter-dropdown .form-check-label, .filter-dropdown .form-check-input {
+    cursor: pointer;
+}
+ 
+.filter-dropdown .filter-dropdown-list .form-check-label, .filter-dropdown .filter-dropdown-list.older-first a, .filter-dropdown .filter-dropdown-list.newest-first a {
+    padding: 8px 10px;
+    text-wrap: nowrap; 
+    display: block;
+}
+.filter-dropdown .filter-dropdown-list:hover {
+    background: #F2F9FC;
+    border-radius: var(--radius-xl);
+}
+
+.filter-dropdown .form-check-input:checked {
+    background-color: #303030;
+    border-color: #303030; 
+}
+.custom-dropdown-select-list .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.multiselect-filter:has(.multiselection:checked) {
+    background-color: #F2F9FC;
+}
+.filter-dropdown .form-check-input {
+    margin-right: 3px;
+}
+.filter-dropdown .filter-dropdown-list:has(.form-check-input:checked) {
+    background: #F2F9FC;
+    border-radius: var(--radius-xl);
+    border:unset;
+    display: block;
+    color: #303030;
+    font-weight: var(--fw-normal);
+}
+.filter-dropdown .filter-dropdown-list {
+margin-bottom: 1px;
+}
+li.border-top:has(.older-first) {
+    margin-top: 2px;
+    padding-top: 2px;
+}
+.filter-dropdown .filter-dropdown-list.sort-by {
+    padding: 1px 14px 7px 14px;
+}
+.social-icon:hover {
+    background-color: #F2F9FC;
+    border-radius: var(--radius-xl);
+    color: var(--primary);
+}
+.social-icon:hover img, .social-icon:hover svg {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(98%) saturate(3973%) hue-rotate(187deg) brightness(99%) contrast(100%);
+}
+.w-120 {
+    width: 120px !important;
+    min-width: unset;
+}
+.multiselect-filter .btn-multi {
+    padding: 7px 10px 7px 8px;
+    height: 30px;
+}
+.queanscard {
+    border: 1px solid #D9D9D9;
+    background-color: #F8F8F8;
+    padding: 10px;
+    border-radius: var(--radius-xl);
+    margin-left: 24px;
+    margin-right: 12px;
+}
+textarea#editReviewArea, textarea#editReviewArea2 {
+    resize: none;
+}
+textarea#editReviewArea::-webkit-scrollbar {
+    display: none;
+}
+.ms-24-me-12 {    
+    margin-left: 24px;
+    margin-right: 12px;
+}
+.tick {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 6px;
+}
+.success-tick {
+    background-color: #00845C;
+    box-shadow: 0px 2px 4px 0px #8ACEBA;
+    border: 1px solid #E8FFF3;
+}
+.gray-tick {
+    background-color: #B1B1B1;
+    box-shadow: 0px 2px 4px 0px #BFBFBF;
+    border: 1px solid #F8F8F8;
+}
+#reviewEmailTemplateTab button.active {
+    border: 1px solid #B1B1B1 !important;
+}
+#reviewEmailTemplateTab button:hover {
+    border: 1px solid #B1B1B1 !important;
+    color: #303030;
+}
+.icon-acc-bg {
+    background-color: #F2F9FC;
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    border-radius: var(--radius-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.mob-card {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 450px;
+}
+.card-space-6px {
+    padding-left: 6px;
+    padding-right: 6px; 
+}
+#deskView.active svg, #mobView.active svg {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(21%) hue-rotate(2deg) brightness(92%) contrast(108%);
+}
+@media only screen and (min-width: 768px) {
+    #configMenu.collapse {
+        display: block;
+    }
+    #configMenu.offcanvas {
+        display: block;
+        visibility: visible;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    #configMenu.offcanvas {
+        border-radius: 0 !important;
+    }
+    .filter-dropdown.filter-dropdown-min-w-700 {
+        min-width:280px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .queanscard {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ms-24-me-12 {    
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-md-10.ps-40, .col-md-7.col-lg-8.ps-40, .col-md-11.ps-40 {
+        padding-left: 12px;
+    } 
+}

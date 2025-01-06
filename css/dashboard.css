@@ -1,0 +1,186 @@
+.daterangepicker {
+    font-family: 'Inter';
+}
+.dashboard .close-icon {
+    width: 24px;
+    height: 24px;
+    border: 0.75px solid #8AAFC1;
+    right: 25px;
+    top: 15px;
+}
+.dashboard .recent-reviews::-webkit-scrollbar {
+    width: 6px;
+} 
+.dashboard .recent-reviews::-webkit-scrollbar-thumb {
+    -webkit-border-radius: var(--radius-lg);
+    border-radius: var(--radius-lg);
+    -webkit-border-radius: var(--radius-lg);
+    background: #E7E7E7;
+}
+
+
+.dashboard .recent-reviews-cards .card {
+    padding-bottom: 65px !important;
+    height: calc(100% - 50px );
+}
+.dashboard .recent-reviews .list-group-item, .recent-review-card .card-header, .recent-review-card .card-footer {
+    padding: 14px !important;
+}
+
+.dashboard .dashboard-review-icon-bg {
+    border: 1px solid #79B9E2;
+    border-radius: var(--radius-xl);
+    background-color: #F2FBFF;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.dashboard .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 4px;
+}
+.dashboard .dot-theme {
+    background-color: var(--primary);
+}
+.dashboard .dot-theme-light {
+    background-color: #277399;
+}
+.dashboard .dot-79B9E2 {
+    background-color: #79B9E2;
+}
+.dashboard .dot-A0DFFD {
+    background-color: #A0DFFD;
+}
+.dashboard .h-22 {
+    height: 22px;
+}
+.dashboard .bg-E5EEF1 {
+    background-color: #E5EEF1;
+}
+.dashboard .link-dark-on-hover:hover {
+    color: var(--text-body-color) !important;
+}
+.dashboard .link-dark-on-hover:hover svg, .link-dark-on-hover:hover img {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(5%) saturate(17%) hue-rotate(314deg) brightness(91%) contrast(87%);
+}
+.dashboard .exciting-feature-grad {
+    background: linear-gradient(251.44deg, #F7E8C7 14.35%, #E7F3F8 38.32%, #FAFDFF 59.06%, #C8EBFA 83.51%, #F3FBFE 103.99%);
+    padding-top: 23px;
+    padding-bottom: 20px;
+} 
+
+/* filter dropdown start */
+.dashboard .filter-dropdown {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: var(--radius-xl);
+    box-shadow: 0px 4px 6px 0px #42393133;
+    min-width: 210px;
+}
+.dashboard .filter-dropdown .form-check-label, .filter-dropdown .form-check-input {
+    cursor: pointer;
+}
+ 
+.dashboard .filter-dropdown .filter-dropdown-list .form-check-label, .filter-dropdown .filter-dropdown-list.older-first a, .filter-dropdown .filter-dropdown-list.newest-first a {
+    padding: 8px 10px;
+    text-wrap: nowrap; 
+    display: block;
+}
+.dashboard .filter-dropdown .filter-dropdown-list:hover {
+    background: #F2F9FC;
+    border-radius: var(--radius-xl);
+}
+
+.dashboard .filter-dropdown .form-check-input:checked {
+    background-color: #303030;
+    border-color: #303030; 
+} 
+.dashboard .filter-dropdown .form-check-input {
+    margin-right: 3px;
+}
+.dashboard .filter-dropdown .filter-dropdown-list:has(.form-check-input:checked) {
+    background: #F2F9FC;
+    border-radius: var(--radius-xl);
+    border:unset;
+    display: block;
+    color: var(--text-body-color);
+    font-weight: var(--fw-normal);
+}
+.dashboard .filter-dropdown .filter-dropdown-list {
+margin-bottom: 1px;
+}
+
+/* filter dropdown end */
+.daterangepicker .ranges li.active {
+    background-color: var(--primary);
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: var(--primary); 
+    color: #fff !important;
+}
+.show-calendar .drp-buttons {
+    display: flex !important;
+    justify-content: end;
+    align-items: center;
+}
+.chart-container-multi, .chart-container-single {
+    height: 400px;
+    width: 100%;
+  }
+@media only screen and (max-width: 768px) {
+    .dashboard .exciting-feature-grad {
+        border-top-right-radius: var(--radius-xxl);
+        border-bottom-right-radius: var(--radius-xxl);
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    .dashboard .roundedBorderedTable.roundedTable td{ 
+        padding: 10px 7px !important;
+        font-size: 13px;
+    }
+    .dashboard .recent-reviews {
+        min-height: auto;
+        height: auto; 
+    }
+    .dashboard .reviews-and-ratting-data .dashboard-review-icon-bg {
+        margin-bottom: 0;
+    }
+    .dashboard .summarized-review-data .dashboard-review-icon-bg {
+        margin-bottom: 7px;
+    }
+    .chart-container-single {
+        height: 230px;
+    }
+    .chart-container-multi {
+        height: 300px;
+    }
+}
+ 
+@media only screen and (max-width: 575px) {
+    .dashboard .fs-mob-14 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .dashboard .roundedTable .tbl-heading:first-child { 
+        min-width: 170px;
+    }
+    .dashboard .exciting-feature-grad {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .dashboard .exciting-feature-grad img {
+        max-height: 150px;
+    }
+    .dashboard .dashboard-review-icon-bg {
+        margin-bottom: 7px;
+    }
+    .dashboard .summarized-review-data .dashboard-review-icon-bg {
+        margin-bottom: 0;
+    }    
+}

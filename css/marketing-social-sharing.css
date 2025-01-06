@@ -1,0 +1,104 @@
+.icon-acc-bg {
+    background-color: #F2F9FC;
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    border-radius: var(--radius-xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.mob-card {
+    min-height: 511px;
+}
+.custom-radio2 .form-check-label {
+    padding: 10px 25px 9px 10px; 
+}
+.review-checks .custom-radio2:has(.form-check-input:checked) .form-check-label .rating-svg {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(32%) saturate(3721%) hue-rotate(174deg) brightness(95%) contrast(104%);
+}
+.rate-feed-filter-service {
+    padding:9px 14px;
+    margin-bottom: 18px;
+}
+.badge-theme {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.mob-card {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#deskView.active svg, #mobView.active svg {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(21%) hue-rotate(2deg) brightness(92%) contrast(108%);
+}
+.custom-radio2:has(.form-check-input:checked) .product-id-filter-subtitle {
+    color: var(--primary) !important;
+}
+.card-space-6px {
+    padding-left: 6px;
+    padding-right: 6px; 
+}
+.marketing-and-social-sharing .select-page-post-reviews-facebook label {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+}
+.marketing-and-social-sharing .select-page-post-reviews-facebook label:has(input[type="checkbox"]:checked)  {
+    color: #ffffff !important;
+    background-color: var(--primary);
+}
+.select-page-post-reviews-facebook.social-media label {
+    padding: 4px 12px;
+}
+.select-page-post-reviews-facebook.social-media label:has(input[type="checkbox"]:checked) svg {
+    filter: invert(0) brightness(100);
+}
+.marketing-and-social-sharing .p-13 {
+    padding: 13px;
+}
+.side-nav {
+    padding: 9px 15px;
+    margin-bottom: 6px;
+}
+.side-nav.active {
+    border: 1px solid #8AAFC1;
+    background: #F2F9FC;
+    border-radius: 14px;
+}
+.side-nav.active a {
+    color:#005278 !important;
+    font-weight: var(--fw-medium);
+}
+.reviewer-type-radio .custom-radio2 {
+    padding-left: 0;
+}
+.reviewer-type-radio .custom-radio2 .form-check-label {
+    padding-right: 10px;
+}
+@media only screen and (min-width: 768px) {
+    #configMenu.collapse {
+        display: block;
+    }
+    #configMenu.offcanvas {
+        display: block;
+        visibility: visible;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #configMenu.offcanvas {
+        border-radius: 0 !important;
+    }
+}

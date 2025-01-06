@@ -1,0 +1,138 @@
+.widget .py-5px {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.widget .review-icon::after {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' width='20'%3E%3Cpath fill='%23303030' fill-rule='evenodd' d='M6.24 8.2a.75.75 0 0 1 1.06.04l2.7 2.908 2.7-2.908a.75.75 0 1 1 1.1 1.02l-3.25 3.5a.75.75 0 0 1-1.1 0l-3.25-3.5a.75.75 0 0 1 .04-1.06Z'/%3E%3C/svg%3E");
+width: 20px;
+height: 20px;
+border: 0;
+}
+.widget .w-34 {
+    min-width: 34px;
+    width: 34px;
+}
+.widget .p-20 {
+    padding: 20px;
+} 
+.widget .border-red-light {
+    border:1px solid var(--color-gray3);
+}
+.widget .card-space-6px {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+}
+.widget .icon-acc-bg {
+    background-color: #F2F9FC;
+    width: 52px;
+    min-width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.widget .visibility-checkbox label {
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+}
+.widget .visibility-checkbox label:has(input[type="checkbox"]:checked)  {
+    color: #ffffff !important;
+    background-color: var(--primary);
+}
+.widget .visibility-checkbox label:has(input[type="checkbox"]:checked) svg, .visibility-checkbox label:has(input[type="checkbox"]:checked) img {
+filter: invert(100) brightness(100);
+}
+.widget .carousel-control-prev, .widget .carousel-control-next {
+    top: 30%;
+}
+.w-134 {
+    width: 134px;
+}
+.w-94 {
+    width: 94px;
+}
+.widget-select-badge .custom-radio2:has(.form-check-input:checked) {
+    border-color: var(--text-body-color);
+}
+.widget .accordion-button:focus {
+    box-shadow: unset;
+}
+.widget .accordion-button:not(.collapsed) {
+    color: var(--text-body-color) !important;
+    background-color: var(--bs-accordion-active-bg);
+    box-shadow: unset;
+    padding-bottom: 0!important;
+}
+.widget .accordion-body {
+    border-top: 1px solid #D9D9D9;
+    transition: 0.5s;
+    margin-top: 14px;
+} 
+.widget .accordion-button::after {
+    background-size: 15px;
+    height: 15px;
+    filter: brightness(0) saturate(100%) invert(17%) sepia(2%) saturate(5%) hue-rotate(322deg) brightness(103%) contrast(95%);
+} 
+.widget .accordion-item:not(:first-of-type) {
+    border-top: 1px solid var(--bs-border-color-translucent);
+}
+.widget .card {
+    border-radius: var(--radius-xxl) !important;
+}
+.widget .card.rounded-pill {
+    border-radius: var(--bs-border-radius-pill) !important;
+}
+.review-checks .custom-radio2:has(.form-check-input:checked) .form-check-label .rating-svg {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(32%) saturate(3721%) hue-rotate(174deg) brightness(95%) contrast(104%);
+}
+.auto-publish-reviews-checks-reviews {
+    display: none;
+}
+.auto-publish-reviews-checks-reviews .custom-radio2 {
+    padding-left: 0;
+}
+.auto-publish-reviews-checks:has(#autoPublishReviewsMinimumStarRating:checked) ~ .auto-publish-reviews-checks-reviews {
+    display: flex;
+}
+.review-icon-dropdown.show {
+    display: flex;
+}
+.review-icon-dropdown .dropdown-item {
+    padding: 5px;
+    border-radius: 5px;
+}
+.review-icon-dropdown .dropdown-item:hover, .review-icon-dropdown .dropdown-item:active {
+    background-color: var(--color-blue-light);
+}
+.review-icon-dropdown .dropdown-item svg {
+    display: block;
+}
+.widget .social-media label:has(input[type="checkbox"]:checked)  {
+    color: #ffffff !important;
+    background-color: var(--primary);
+}
+.widget .social-media label {
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+}
+.widget .social-media label:has(input[type="checkbox"]:checked) svg {
+    filter: invert(0) brightness(100);
+}
+.mob-card {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#deskView.active svg, #mobView.active svg {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(21%) hue-rotate(2deg) brightness(92%) contrast(108%);
+}
+@media only screen and (max-width: 575px) {
+    .widget .card-space-6px {
+        padding:0;
+    }
+}
